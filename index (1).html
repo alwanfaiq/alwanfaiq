@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10110f">
+<meta name="description" content="Alwan Faiq — Designer & Motion Graphic. Selected work in identity, branding and motion design.">
+<title>Alwan Faiq® — Designer & Motion Graphic</title>
+<style>
+:root{--bg:#10110f;--panel:#191a17;--paper:#eae9e2;--muted:#a6a79e;--line:#393a34;--lime:#d8ff3e;--orange:#ff7148;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--paper);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1320px,calc(100% - 48px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(16,17,15,.88);backdrop-filter:blur(16px);border-bottom:1px solid #ffffff14}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:17px;font-weight:900;letter-spacing:-.06em}.brand span{color:var(--lime)}.navlinks{display:flex;align-items:center;gap:28px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#c7c8bf}.navlinks a:hover{color:var(--lime)}.nav-cta{border:1px solid var(--lime);color:var(--lime);padding:12px 15px;border-radius:2px;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--paper);padding:10px 12px}
+.hero{padding:80px 0 55px;position:relative;overflow:hidden}.eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--lime);display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";display:inline-block;width:24px;height:1px;background:currentColor}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:40px;align-items:end}.hero h1{font-size:clamp(68px,11.6vw,164px);line-height:.79;letter-spacing:-.095em;margin:36px 0 32px;font-weight:900;text-transform:uppercase}.hero h1 .outline{-webkit-text-stroke:1px var(--paper);color:transparent}.hero h1 .accent{color:var(--lime)}.hero-side{padding:0 0 8px;max-width:360px}.hero-side p{font-size:16px;line-height:1.7;color:#c1c2b9;margin:0 0 26px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:15px 18px;border:1px solid var(--line);font-size:10px;text-transform:uppercase;letter-spacing:.12em;transition:.2s}.btn.primary{background:var(--lime);color:#11120f;border-color:var(--lime);font-weight:800}.btn:hover{transform:translateY(-3px);border-color:var(--lime)}.hero-foot{margin-top:70px;border-top:1px solid var(--line);padding-top:17px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:10px;letter-spacing:.14em;text-transform:uppercase}.ticker{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:17px 0;white-space:nowrap;color:var(--lime);font-weight:800;font-size:12px;letter-spacing:.14em}.ticker-track{display:inline-block;animation:marquee 28s linear infinite}.ticker span{padding:0 28px}@keyframes marquee{to{transform:translateX(-50%)}}section{padding:105px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:36px}.kicker{color:var(--lime);font-size:10px;letter-spacing:.17em;text-transform:uppercase}.section-head h2{font-size:clamp(42px,6vw,78px);letter-spacing:-.075em;line-height:.9;margin:14px 0 0;text-transform:uppercase}.section-head p{max-width:300px;color:var(--muted);font-size:13px;line-height:1.7;margin:0}
+.projects{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.project{position:relative;overflow:hidden;background:var(--panel);min-height:340px;display:flex;flex-direction:column;isolation:isolate}.project:nth-child(1),.project:nth-child(4){grid-column:span 7}.project:nth-child(2),.project:nth-child(3){grid-column:span 5}.project-art{min-height:270px;flex:1;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:25px;transition:transform .4s}.project:hover .project-art{transform:scale(1.025)}.project-meta{display:flex;align-items:center;justify-content:space-between;padding:17px 18px;border-top:1px solid #ffffff12;position:relative;z-index:2;background:var(--panel)}.project-meta h3{font-size:15px;margin:0 0 5px;letter-spacing:-.03em}.project-meta p{margin:0;color:var(--muted);font-size:10px;letter-spacing:.08em;text-transform:uppercase}.arrow{border:1px solid #ffffff44;border-radius:50%;width:36px;height:36px;display:grid;place-items:center;font-size:17px;transition:.2s}.project:hover .arrow{background:var(--lime);color:#111;border-color:var(--lime)}
+/* Original art-inspired placeholder graphics: replace with official project images when available. */
+.art-amoretti{background:#d9c7a7;color:#29271e;flex-direction:column;text-align:center}.coffee-sun{width:130px;height:130px;border:2px solid #29271e;border-radius:50%;display:grid;place-items:center;font-size:54px;margin-bottom:12px;position:relative}.coffee-sun:after{content:"";position:absolute;width:165px;height:1px;background:#29271e;transform:rotate(-35deg)}.art-amoretti strong{font-family:var(--serif);font-size:clamp(32px,5vw,66px);font-weight:400;line-height:.85;letter-spacing:-.06em}.art-amoretti small{margin-top:14px;letter-spacing:.25em;font-size:9px}.art-mauly{background:#e5b5a4;color:#4a2829;display:flex;align-items:center;gap:15px}.mauly-shape{width:45%;aspect-ratio:1;border-radius:50% 50% 4px 4px;background:#8e4648;position:relative}.mauly-shape:before{content:"";position:absolute;inset:12% 18% 0;border-radius:50% 50% 0 0;background:#e5b5a4}.mauly-shape:after{content:"M";position:absolute;inset:0;display:grid;place-items:center;font-family:var(--serif);font-size:90px;color:#f2d7c7}.mauly-word{font-family:var(--serif);font-size:clamp(34px,4vw,58px);letter-spacing:-.08em}.art-personal{background:#d7f06a;color:#18210d;flex-direction:column;gap:10px}.monogram{font-weight:900;font-size:clamp(95px,15vw,190px);letter-spacing:-.14em;line-height:.8}.art-personal small{letter-spacing:.28em;font-size:10px}.art-esports{background:#c4b7ff;color:#1b1741;flex-direction:column;align-items:stretch;justify-content:space-between}.esport-top{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.16em;text-transform:uppercase}.esport-mark{font-weight:1000;font-size:clamp(60px,9vw,120px);line-height:.8;letter-spacing:-.12em;transform:skew(-8deg)}.esport-bottom{display:flex;justify-content:space-between;border-top:2px solid #1b1741;padding-top:10px;font-size:10px;text-transform:uppercase;letter-spacing:.1em}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.about-stamp{border:1px solid var(--line);min-height:360px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(circle at 70% 25%,#2a2d20,transparent 48%)}.stamp-circle{width:140px;height:140px;border:1px solid var(--lime);border-radius:50%;display:grid;place-items:center;color:var(--lime);font-size:45px;font-weight:900;letter-spacing:-.1em;transform:rotate(-12deg)}.about-stamp p{color:var(--muted);font-size:10px;letter-spacing:.15em;text-transform:uppercase;line-height:1.8}.about-copy h3{font-size:clamp(30px,4vw,52px);line-height:1.04;letter-spacing:-.065em;margin:0 0 22px;font-weight:600}.about-copy h3 em{font-family:var(--serif);font-weight:400;color:var(--lime)}.about-copy>p{color:#b9bab2;line-height:1.9;font-size:14px;max-width:650px}.skill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}.skill-list span{border:1px solid var(--line);padding:10px 12px;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.experience{border-top:1px solid var(--line)}.exp-row{display:grid;grid-template-columns:1fr 2fr 1fr;gap:20px;padding:25px 0;border-bottom:1px solid var(--line);align-items:start}.exp-date{color:var(--muted);font-size:11px;letter-spacing:.08em}.exp-row h3{margin:0 0 8px;font-size:20px;letter-spacing:-.04em}.exp-row p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}.exp-type{text-align:right;color:var(--lime);font-size:10px;text-transform:uppercase;letter-spacing:.12em}
+.contact{background:var(--lime);color:#14150f;padding:90px 0}.contact .kicker{color:#454d20}.contact-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:40px;align-items:end}.contact h2{font-size:clamp(55px,10vw,130px);line-height:.8;letter-spacing:-.1em;text-transform:uppercase;margin:22px 0 30px}.contact p{max-width:400px;line-height:1.7;font-size:14px}.contact .btn{border-color:#14150f;color:#14150f}.contact .btn:hover{background:#14150f;color:var(--lime)}.contact-links{display:flex;flex-direction:column;gap:0}.contact-links a{padding:17px 0;border-bottom:1px solid #14150f55;display:flex;justify-content:space-between;font-size:12px;text-transform:uppercase;letter-spacing:.08em}.contact-links a:first-child{border-top:1px solid #14150f55}.contact-links a:hover{padding-left:8px}.footer{padding:25px 0;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.12em}.footer strong{color:var(--paper)}
+@media(max-width:760px){.wrap{width:min(100% - 32px,1320px)}.nav{height:66px}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;padding:22px 24px;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:20px}.navlinks.open{display:flex}.nav-cta{display:none}.hero{padding-top:55px}.hero-grid{grid-template-columns:1fr;gap:8px}.hero h1{font-size:clamp(65px,18vw,120px);margin:30px 0}.hero-side{max-width:500px}.hero-foot{margin-top:45px;flex-wrap:wrap}.section-head{align-items:flex-start;flex-direction:column}.section-head p{max-width:500px}.projects{grid-template-columns:1fr;gap:14px}.project:nth-child(n){grid-column:1;min-height:320px}.project-art{min-height:245px}.about-grid{grid-template-columns:1fr;gap:30px}.about-stamp{min-height:260px}.exp-row{grid-template-columns:1fr 2fr;gap:10px}.exp-type{grid-column:2;text-align:left}.contact-grid{grid-template-columns:1fr;gap:30px}.contact{padding:70px 0}.footer{flex-direction:column;gap:10px}}
+@media print{body{background:#fff;color:#111}.topbar,.ticker,.hero-actions,.project,.contact,.footer .no-print{display:none!important}.wrap{width:100%}.hero{padding:20px 0}.hero h1{font-size:70px;color:#111}.hero h1 .outline{-webkit-text-stroke:1px #111}.hero-side p,.about-copy>p,.exp-row p,.exp-date{color:#333}.about-grid{grid-template-columns:1fr 2fr;gap:25px}.about-stamp{min-height:150px}.stamp-circle{width:70px;height:70px;font-size:25px}.experience{margin-top:20px}section{padding:25px 0}.section-head h2{font-size:36px}.exp-row{break-inside:avoid;padding:12px 0}.contact{display:none}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home">ALWAN<span>FAIQ</span>®</a>
+    <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+      <a href="#work">Selected work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Let's talk ↗</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navlinks">MENU +</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="eyebrow">Independent creative · Depok, Indonesia</div>
+    <div class="hero-grid">
+      <h1>Alwan<br><span class="outline">Faiq</span><span class="accent">®</span></h1>
+      <div class="hero-side">
+        <p>Designer & motion graphic artist building distinctive visual identities, thoughtful brand systems, and visuals with a little extra character.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#work">Explore selected work <span>↘</span></a>
+          <button class="btn" id="cvBtn" type="button">Print / save CV <span>↓</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="hero-foot"><span>Brand identity / Motion / Visual design</span><span>Available for freelance & full-time ↗</span><span>Portfolio · 2021—2026</span></div>
+  </div>
+</section>
+<div class="ticker" aria-label="Areas of practice"><div class="ticker-track"><span>IDENTITY SYSTEMS ✳</span><span>MOTION DESIGN ✳</span><span>ART DIRECTION ✳</span><span>VISUAL STORYTELLING ✳</span><span>IDENTITY SYSTEMS ✳</span><span>MOTION DESIGN ✳</span><span>ART DIRECTION ✳</span><span>VISUAL STORYTELLING ✳</span></div></div>
+<section id="work">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">01 / Selected projects</div><h2>Work that<br>speaks.</h2></div><p>A selection of identity and visual explorations from Alwan's portfolio. Open a project on Behance to see the original case study.</p></div>
+    <div class="projects">
+      <a class="project" href="https://www.behance.net/gallery/" target="_blank" rel="noopener" aria-label="Open Amoretti Roasters project on Behance">
+        <div class="project-art art-amoretti"><div class="coffee-sun">✳</div><strong>Amoretti<br>Roasters</strong><small>COFFEE · BRAND IDENTITY</small></div>
+        <div class="project-meta"><div><h3>Amoretti Roasters</h3><p>Logo & brand identity</p></div><span class="arrow">↗</span></div>
+      </a>
+      <a class="project" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener" aria-label="View Alwan Faiq's Behance portfolio">
+        <div class="project-art art-mauly"><div class="mauly-shape"></div><div class="mauly-word">mauly<br><small style="font:10px Arial;letter-spacing:.2em">MODEST WEAR</small></div></div>
+        <div class="project-meta"><div><h3>Mauly</h3><p>Hijab logo & branding</p></div><span class="arrow">↗</span></div>
+      </a>
+      <a class="project" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener" aria-label="View Personal Identity project on Behance">
+        <div class="project-art art-personal"><div class="monogram">AF.</div><small>PERSONAL IDENTITY / ALWAN FAIQ</small></div>
+        <div class="project-meta"><div><h3>Personal Identity</h3><p>Visual identity system</p></div><span class="arrow">↗</span></div>
+      </a>
+      <a class="project" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener" aria-label="View Alter Ego Esports concept on Behance">
+        <div class="project-art art-esports"><div class="esport-top"><span>Competitive spirit</span><span>Concept / 2026</span></div><div class="esport-mark">ALTER<br>EGO.</div><div class="esport-bottom"><span>Esports identity</span><span>Unofficial rebrand</span></div></div>
+        <div class="project-meta"><div><h3>Alter Ego Esports</h3><p>Unofficial rebranding concept</p></div><span class="arrow">↗</span></div>
+      </a>
+    </div>
+    <p style="font-size:11px;color:var(--muted);line-height:1.7;margin-top:20px">Note: The artwork above is a custom-designed visual preview, not the original Behance project imagery. Replace the project links and artwork with the exact case-study URLs/assets before publishing.</p>
+    <div style="margin-top:24px"><a class="btn" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener">View full Behance portfolio ↗</a></div>
+  </div>
+</section>
+<section id="about">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">02 / A little about me</div><h2>Ideas into<br>identity.</h2></div><p>Curiosity-led design with a focus on clarity, character, and consistency.</p></div>
+    <div class="about-grid">
+      <div class="about-stamp"><div class="stamp-circle">AF.</div><p>Alwan Faiq<br>Designer & Motion Graphic<br>Depok, Indonesia</p></div>
+      <div class="about-copy">
+        <h3>Making visuals that feel <em>considered,</em> not just decorated.</h3>
+        <p>I'm Alwan Faiq, a designer and motion graphic artist based in Depok, Indonesia. My work explores visual identity, logo design, branding, and motion-led communication. I enjoy shaping a clear idea into a visual language that feels memorable and works across touchpoints.</p>
+        <p>This portfolio brings together selected identity projects and creative experiments. For project details, process, and the latest work, visit my Behance profile.</p>
+        <div class="skill-list"><span>Brand identity</span><span>Logo design</span><span>Motion graphics</span><span>Art direction</span><span>Visual communication</span><span>Adobe Photoshop</span><span>Adobe Illustrator</span><span>Adobe After Effects</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">03 / Experience & CV</div><h2>What I bring.</h2></div><p>A concise overview based on publicly available profile details. Add dates and further roles to make this a complete, verified CV.</p></div>
+    <div class="experience">
+      <div class="exp-row"><div class="exp-date">Work experience</div><div><h3>Motion Designer</h3><p>Dalwa TV · Pasuruan, Indonesia</p><p>Motion-led visual communication and design production.</p></div><div class="exp-type">Professional experience</div></div>
+      <div class="exp-row"><div class="exp-date">Independent practice</div><div><h3>Brand Identity & Visual Design</h3><p>Selected projects include Amoretti Roasters, Personal Identity, Mauly Hijab, and an Alter Ego Esports rebranding concept.</p></div><div class="exp-type">Selected projects</div></div>
+      <div class="exp-row"><div class="exp-date">Tools</div><div><h3>Adobe Creative Cloud</h3><p>Photoshop · After Effects · Illustrator</p></div><div class="exp-type">Design toolkit</div></div>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:25px"><button class="btn primary" id="cvBtn2" type="button">Print / save CV as PDF ↓</button><a class="btn" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener">Portfolio profile ↗</a></div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div><div class="kicker">04 / Have a project in mind?</div><h2>Let's make<br>it matter.</h2><p>Open to freelance collaborations and full-time opportunities. Reach out to discuss a project, a role, or a creative idea.</p><a class="btn" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener">Message via Behance ↗</a></div>
+    <div class="contact-links">
+      <a href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener"><span>Behance</span><span>↗</span></a>
+      <a href="https://linktr.ee/alwanfaiq" target="_blank" rel="noopener"><span>Linktree / Socials</span><span>↗</span></a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><span>LinkedIn</span><span>↗</span></a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="wrap footer"><span>© <span id="year"></span> <strong>Alwan Faiq</strong> — Independent creative</span><span>Designed with intention · Depok, Indonesia</span><a href="#home">Back to top ↑</a></footer>
+<script>
+const menuBtn=document.getElementById('menuBtn');
+const navlinks=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>{const open=navlinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'CLOSE −':'MENU +';});
+navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navlinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='MENU +';}));
+function printCV(){window.print()}
+document.getElementById('cvBtn').addEventListener('click',printCV);
+document.getElementById('cvBtn2').addEventListener('click',printCV);
+document.getElementById('year').textContent=new Date().getFullYear();
+const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.animate([{opacity:0,transform:'translateY(18px)'},{opacity:1,transform:'translateY(0)'}],{duration:650,easing:'cubic-bezier(.2,.7,.2,1)',fill:'both'});revealObserver.unobserve(entry.target)}}),{threshold:.08});
+document.querySelectorAll('.section-head,.project,.about-grid,.exp-row').forEach(el=>revealObserver.observe(el));
+</script>
+</body>
+</html>
