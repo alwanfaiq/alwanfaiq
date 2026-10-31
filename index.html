@@ -1,127 +1,1007 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#10110f">
-<meta name="description" content="Alwan Faiq — Designer & Motion Graphic. Selected work in identity, branding and motion design.">
-<title>Alwan Faiq® — Designer & Motion Graphic</title>
-<style>
-:root{--bg:#10110f;--panel:#191a17;--paper:#eae9e2;--muted:#a6a79e;--line:#393a34;--lime:#d8ff3e;--orange:#ff7148;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--paper);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1320px,calc(100% - 48px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(16,17,15,.88);backdrop-filter:blur(16px);border-bottom:1px solid #ffffff14}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:17px;font-weight:900;letter-spacing:-.06em}.brand span{color:var(--lime)}.navlinks{display:flex;align-items:center;gap:28px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#c7c8bf}.navlinks a:hover{color:var(--lime)}.nav-cta{border:1px solid var(--lime);color:var(--lime);padding:12px 15px;border-radius:2px;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--paper);padding:10px 12px}
-.hero{padding:80px 0 55px;position:relative;overflow:hidden}.eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--lime);display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";display:inline-block;width:24px;height:1px;background:currentColor}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:40px;align-items:end}.hero h1{font-size:clamp(68px,11.6vw,164px);line-height:.79;letter-spacing:-.095em;margin:36px 0 32px;font-weight:900;text-transform:uppercase}.hero h1 .outline{-webkit-text-stroke:1px var(--paper);color:transparent}.hero h1 .accent{color:var(--lime)}.hero-side{padding:0 0 8px;max-width:360px}.hero-side p{font-size:16px;line-height:1.7;color:#c1c2b9;margin:0 0 26px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:15px 18px;border:1px solid var(--line);font-size:10px;text-transform:uppercase;letter-spacing:.12em;transition:.2s}.btn.primary{background:var(--lime);color:#11120f;border-color:var(--lime);font-weight:800}.btn:hover{transform:translateY(-3px);border-color:var(--lime)}.hero-foot{margin-top:70px;border-top:1px solid var(--line);padding-top:17px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:10px;letter-spacing:.14em;text-transform:uppercase}.ticker{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:17px 0;white-space:nowrap;color:var(--lime);font-weight:800;font-size:12px;letter-spacing:.14em}.ticker-track{display:inline-block;animation:marquee 28s linear infinite}.ticker span{padding:0 28px}@keyframes marquee{to{transform:translateX(-50%)}}section{padding:105px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:36px}.kicker{color:var(--lime);font-size:10px;letter-spacing:.17em;text-transform:uppercase}.section-head h2{font-size:clamp(42px,6vw,78px);letter-spacing:-.075em;line-height:.9;margin:14px 0 0;text-transform:uppercase}.section-head p{max-width:300px;color:var(--muted);font-size:13px;line-height:1.7;margin:0}
-.projects{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.project{position:relative;overflow:hidden;background:var(--panel);min-height:340px;display:flex;flex-direction:column;isolation:isolate}.project:nth-child(1),.project:nth-child(4){grid-column:span 7}.project:nth-child(2),.project:nth-child(3){grid-column:span 5}.project-art{min-height:270px;flex:1;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:25px;transition:transform .4s}.project:hover .project-art{transform:scale(1.025)}.project-meta{display:flex;align-items:center;justify-content:space-between;padding:17px 18px;border-top:1px solid #ffffff12;position:relative;z-index:2;background:var(--panel)}.project-meta h3{font-size:15px;margin:0 0 5px;letter-spacing:-.03em}.project-meta p{margin:0;color:var(--muted);font-size:10px;letter-spacing:.08em;text-transform:uppercase}.arrow{border:1px solid #ffffff44;border-radius:50%;width:36px;height:36px;display:grid;place-items:center;font-size:17px;transition:.2s}.project:hover .arrow{background:var(--lime);color:#111;border-color:var(--lime)}
-/* Original art-inspired placeholder graphics: replace with official project images when available. */
-.art-amoretti{background:#d9c7a7;color:#29271e;flex-direction:column;text-align:center}.coffee-sun{width:130px;height:130px;border:2px solid #29271e;border-radius:50%;display:grid;place-items:center;font-size:54px;margin-bottom:12px;position:relative}.coffee-sun:after{content:"";position:absolute;width:165px;height:1px;background:#29271e;transform:rotate(-35deg)}.art-amoretti strong{font-family:var(--serif);font-size:clamp(32px,5vw,66px);font-weight:400;line-height:.85;letter-spacing:-.06em}.art-amoretti small{margin-top:14px;letter-spacing:.25em;font-size:9px}.art-mauly{background:#e5b5a4;color:#4a2829;display:flex;align-items:center;gap:15px}.mauly-shape{width:45%;aspect-ratio:1;border-radius:50% 50% 4px 4px;background:#8e4648;position:relative}.mauly-shape:before{content:"";position:absolute;inset:12% 18% 0;border-radius:50% 50% 0 0;background:#e5b5a4}.mauly-shape:after{content:"M";position:absolute;inset:0;display:grid;place-items:center;font-family:var(--serif);font-size:90px;color:#f2d7c7}.mauly-word{font-family:var(--serif);font-size:clamp(34px,4vw,58px);letter-spacing:-.08em}.art-personal{background:#d7f06a;color:#18210d;flex-direction:column;gap:10px}.monogram{font-weight:900;font-size:clamp(95px,15vw,190px);letter-spacing:-.14em;line-height:.8}.art-personal small{letter-spacing:.28em;font-size:10px}.art-esports{background:#c4b7ff;color:#1b1741;flex-direction:column;align-items:stretch;justify-content:space-between}.esport-top{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.16em;text-transform:uppercase}.esport-mark{font-weight:1000;font-size:clamp(60px,9vw,120px);line-height:.8;letter-spacing:-.12em;transform:skew(-8deg)}.esport-bottom{display:flex;justify-content:space-between;border-top:2px solid #1b1741;padding-top:10px;font-size:10px;text-transform:uppercase;letter-spacing:.1em}
-.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.about-stamp{border:1px solid var(--line);min-height:360px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(circle at 70% 25%,#2a2d20,transparent 48%)}.stamp-circle{width:140px;height:140px;border:1px solid var(--lime);border-radius:50%;display:grid;place-items:center;color:var(--lime);font-size:45px;font-weight:900;letter-spacing:-.1em;transform:rotate(-12deg)}.about-stamp p{color:var(--muted);font-size:10px;letter-spacing:.15em;text-transform:uppercase;line-height:1.8}.about-copy h3{font-size:clamp(30px,4vw,52px);line-height:1.04;letter-spacing:-.065em;margin:0 0 22px;font-weight:600}.about-copy h3 em{font-family:var(--serif);font-weight:400;color:var(--lime)}.about-copy>p{color:#b9bab2;line-height:1.9;font-size:14px;max-width:650px}.skill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}.skill-list span{border:1px solid var(--line);padding:10px 12px;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
-.experience{border-top:1px solid var(--line)}.exp-row{display:grid;grid-template-columns:1fr 2fr 1fr;gap:20px;padding:25px 0;border-bottom:1px solid var(--line);align-items:start}.exp-date{color:var(--muted);font-size:11px;letter-spacing:.08em}.exp-row h3{margin:0 0 8px;font-size:20px;letter-spacing:-.04em}.exp-row p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}.exp-type{text-align:right;color:var(--lime);font-size:10px;text-transform:uppercase;letter-spacing:.12em}
-.contact{background:var(--lime);color:#14150f;padding:90px 0}.contact .kicker{color:#454d20}.contact-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:40px;align-items:end}.contact h2{font-size:clamp(55px,10vw,130px);line-height:.8;letter-spacing:-.1em;text-transform:uppercase;margin:22px 0 30px}.contact p{max-width:400px;line-height:1.7;font-size:14px}.contact .btn{border-color:#14150f;color:#14150f}.contact .btn:hover{background:#14150f;color:var(--lime)}.contact-links{display:flex;flex-direction:column;gap:0}.contact-links a{padding:17px 0;border-bottom:1px solid #14150f55;display:flex;justify-content:space-between;font-size:12px;text-transform:uppercase;letter-spacing:.08em}.contact-links a:first-child{border-top:1px solid #14150f55}.contact-links a:hover{padding-left:8px}.footer{padding:25px 0;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.12em}.footer strong{color:var(--paper)}
-@media(max-width:760px){.wrap{width:min(100% - 32px,1320px)}.nav{height:66px}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;padding:22px 24px;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:20px}.navlinks.open{display:flex}.nav-cta{display:none}.hero{padding-top:55px}.hero-grid{grid-template-columns:1fr;gap:8px}.hero h1{font-size:clamp(65px,18vw,120px);margin:30px 0}.hero-side{max-width:500px}.hero-foot{margin-top:45px;flex-wrap:wrap}.section-head{align-items:flex-start;flex-direction:column}.section-head p{max-width:500px}.projects{grid-template-columns:1fr;gap:14px}.project:nth-child(n){grid-column:1;min-height:320px}.project-art{min-height:245px}.about-grid{grid-template-columns:1fr;gap:30px}.about-stamp{min-height:260px}.exp-row{grid-template-columns:1fr 2fr;gap:10px}.exp-type{grid-column:2;text-align:left}.contact-grid{grid-template-columns:1fr;gap:30px}.contact{padding:70px 0}.footer{flex-direction:column;gap:10px}}
-@media print{body{background:#fff;color:#111}.topbar,.ticker,.hero-actions,.project,.contact,.footer .no-print{display:none!important}.wrap{width:100%}.hero{padding:20px 0}.hero h1{font-size:70px;color:#111}.hero h1 .outline{-webkit-text-stroke:1px #111}.hero-side p,.about-copy>p,.exp-row p,.exp-date{color:#333}.about-grid{grid-template-columns:1fr 2fr;gap:25px}.about-stamp{min-height:150px}.stamp-circle{width:70px;height:70px;font-size:25px}.experience{margin-top:20px}section{padding:25px 0}.section-head h2{font-size:36px}.exp-row{break-inside:avoid;padding:12px 0}.contact{display:none}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alwan Faiq — Motion Designer & Visual Branding Specialist</title>
+    
+    <!-- Google Fonts: Space Grotesk (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#E61C14',
+                        brandYellow: '#FFC000',
+                        darkBg: '#0E1015',
+                        cardBg: '#161922',
+                        cardBorder: '#262B38',
+                        textLight: '#F4F5F7',
+                        textMuted: '#A0A7B5'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #0E1015;
+            color: #F4F5F7;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .brand-card {
+            background-color: #161922;
+            border: 1px solid #262B38;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .brand-card:hover {
+            border-color: #E61C14;
+            transform: translateY(-2px);
+        }
+
+        .brand-divider {
+            height: 1px;
+            background: linear-gradient(90deg, #E61C14 0%, #FFC000 40%, transparent 100%);
+        }
+
+        .brand-tag {
+            font-family: monospace;
+            font-size: 0.725rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .modal-backdrop {
+            background-color: rgba(14, 16, 21, 0.88);
+            backdrop-filter: blur(8px);
+        }
+
+        /* Print Stylesheet for Cetak PDF */
+        @media print {
+            body {
+                background: white !important;
+                color: black !important;
+                font-size: 10pt;
+            }
+            nav, footer, .no-print, #hero-cta, #toast, #project-filter, .modal-backdrop, .print-hidden {
+                display: none !important;
+            }
+            .brand-card {
+                background: none !important;
+                border: none !important;
+                border-bottom: 1px solid #ccc !important;
+                padding: 10px 0 !important;
+                color: black !important;
+            }
+            .text-textMuted, .text-slate-400, .text-slate-300 {
+                color: #333 !important;
+            }
+            .text-textLight, h1, h2, h3, h4 {
+                color: black !important;
+            }
+            .cv-panel {
+                display: block !important;
+            }
+            .cv-tab-nav {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
-<body>
-<header class="topbar">
-  <div class="wrap nav">
-    <a class="brand" href="#home">ALWAN<span>FAIQ</span>®</a>
-    <nav class="navlinks" id="navlinks" aria-label="Main navigation">
-      <a href="#work">Selected work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
-    </nav>
-    <a class="nav-cta" href="#contact">Let's talk ↗</a>
-    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navlinks">MENU +</button>
-  </div>
-</header>
-<main>
-<section class="hero" id="home">
-  <div class="wrap">
-    <div class="eyebrow">Independent creative · Depok, Indonesia</div>
-    <div class="hero-grid">
-      <h1>Alwan<br><span class="outline">Faiq</span><span class="accent">®</span></h1>
-      <div class="hero-side">
-        <p>Designer & motion graphic artist building distinctive visual identities, thoughtful brand systems, and visuals with a little extra character.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#work">Explore selected work <span>↘</span></a>
-          <button class="btn" id="cvBtn" type="button">Print / save CV <span>↓</span></button>
+<body class="selection:bg-brandRed selection:text-white">
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-[#161922] border border-brandRed text-white px-5 py-3 rounded shadow-2xl text-xs flex items-center space-x-3">
+        <i class="fa-solid fa-check text-brandYellow text-sm"></i>
+        <span id="toast-text" class="font-medium">Email alwanfaiq.studio@gmail.com berhasil disalin!</span>
+    </div>
+
+    <!-- PROJECT DETAIL MODAL -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 modal-backdrop">
+        <div class="brand-card w-full max-w-2xl rounded-lg p-6 sm:p-8 space-y-6 max-h-[90vh] overflow-y-auto relative border-t-4 border-t-brandRed">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-textMuted hover:text-white p-2 text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="space-y-2">
+                <span id="modal-category" class="brand-tag text-brandYellow">KATEGORI</span>
+                <h3 id="modal-title" class="text-2xl sm:text-3xl font-extrabold font-heading text-textLight">Judul Proyek</h3>
+                <div id="modal-role" class="text-xs font-semibold text-brandRed">Peran Utama</div>
+            </div>
+            <div class="border-t border-[#262B38]"></div>
+            <div class="space-y-4 text-xs sm:text-sm text-textMuted leading-relaxed">
+                <p id="modal-description">Deskripsi rinci proyek.</p>
+                <div class="space-y-2">
+                    <div class="font-bold text-textLight text-xs font-heading">Hasil Karya & Fitur Utama:</div>
+                    <ul id="modal-highlights" class="list-disc list-inside space-y-1 text-slate-300">
+                        <!-- Dynamic Highlights -->
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-4 flex flex-wrap items-center justify-between border-t border-[#262B38] gap-4">
+                <div id="modal-tools" class="flex flex-wrap gap-2 text-xs">
+                    <!-- Dynamic Tools -->
+                </div>
+                <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded bg-brandRed text-white hover:bg-red-700 font-bold text-xs flex items-center space-x-2 transition-colors">
+                    <span>Lihat di Behance</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="hero-foot"><span>Brand identity / Motion / Visual design</span><span>Available for freelance & full-time ↗</span><span>Portfolio · 2021—2026</span></div>
-  </div>
-</section>
-<div class="ticker" aria-label="Areas of practice"><div class="ticker-track"><span>IDENTITY SYSTEMS ✳</span><span>MOTION DESIGN ✳</span><span>ART DIRECTION ✳</span><span>VISUAL STORYTELLING ✳</span><span>IDENTITY SYSTEMS ✳</span><span>MOTION DESIGN ✳</span><span>ART DIRECTION ✳</span><span>VISUAL STORYTELLING ✳</span></div></div>
-<section id="work">
-  <div class="wrap">
-    <div class="section-head"><div><div class="kicker">01 / Selected projects</div><h2>Work that<br>speaks.</h2></div><p>A selection of identity and visual explorations from Alwan's portfolio. Open a project on Behance to see the original case study.</p></div>
-    <div class="projects">
-      <a class="project" href="https://www.behance.net/gallery/" target="_blank" rel="noopener" aria-label="Open Amoretti Roasters project on Behance">
-        <div class="project-art art-amoretti"><div class="coffee-sun">✳</div><strong>Amoretti<br>Roasters</strong><small>COFFEE · BRAND IDENTITY</small></div>
-        <div class="project-meta"><div><h3>Amoretti Roasters</h3><p>Logo & brand identity</p></div><span class="arrow">↗</span></div>
-      </a>
-      <a class="project" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener" aria-label="View Alwan Faiq's Behance portfolio">
-        <div class="project-art art-mauly"><div class="mauly-shape"></div><div class="mauly-word">mauly<br><small style="font:10px Arial;letter-spacing:.2em">MODEST WEAR</small></div></div>
-        <div class="project-meta"><div><h3>Mauly</h3><p>Hijab logo & branding</p></div><span class="arrow">↗</span></div>
-      </a>
-      <a class="project" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener" aria-label="View Personal Identity project on Behance">
-        <div class="project-art art-personal"><div class="monogram">AF.</div><small>PERSONAL IDENTITY / ALWAN FAIQ</small></div>
-        <div class="project-meta"><div><h3>Personal Identity</h3><p>Visual identity system</p></div><span class="arrow">↗</span></div>
-      </a>
-      <a class="project" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener" aria-label="View Alter Ego Esports concept on Behance">
-        <div class="project-art art-esports"><div class="esport-top"><span>Competitive spirit</span><span>Concept / 2026</span></div><div class="esport-mark">ALTER<br>EGO.</div><div class="esport-bottom"><span>Esports identity</span><span>Unofficial rebrand</span></div></div>
-        <div class="project-meta"><div><h3>Alter Ego Esports</h3><p>Unofficial rebranding concept</p></div><span class="arrow">↗</span></div>
-      </a>
-    </div>
-    <p style="font-size:11px;color:var(--muted);line-height:1.7;margin-top:20px">Note: The artwork above is a custom-designed visual preview, not the original Behance project imagery. Replace the project links and artwork with the exact case-study URLs/assets before publishing.</p>
-    <div style="margin-top:24px"><a class="btn" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener">View full Behance portfolio ↗</a></div>
-  </div>
-</section>
-<section id="about">
-  <div class="wrap">
-    <div class="section-head"><div><div class="kicker">02 / A little about me</div><h2>Ideas into<br>identity.</h2></div><p>Curiosity-led design with a focus on clarity, character, and consistency.</p></div>
-    <div class="about-grid">
-      <div class="about-stamp"><div class="stamp-circle">AF.</div><p>Alwan Faiq<br>Designer & Motion Graphic<br>Depok, Indonesia</p></div>
-      <div class="about-copy">
-        <h3>Making visuals that feel <em>considered,</em> not just decorated.</h3>
-        <p>I'm Alwan Faiq, a designer and motion graphic artist based in Depok, Indonesia. My work explores visual identity, logo design, branding, and motion-led communication. I enjoy shaping a clear idea into a visual language that feels memorable and works across touchpoints.</p>
-        <p>This portfolio brings together selected identity projects and creative experiments. For project details, process, and the latest work, visit my Behance profile.</p>
-        <div class="skill-list"><span>Brand identity</span><span>Logo design</span><span>Motion graphics</span><span>Art direction</span><span>Visual communication</span><span>Adobe Photoshop</span><span>Adobe Illustrator</span><span>Adobe After Effects</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="experience">
-  <div class="wrap">
-    <div class="section-head"><div><div class="kicker">03 / Experience & CV</div><h2>What I bring.</h2></div><p>A concise overview based on publicly available profile details. Add dates and further roles to make this a complete, verified CV.</p></div>
-    <div class="experience">
-      <div class="exp-row"><div class="exp-date">Work experience</div><div><h3>Motion Designer</h3><p>Dalwa TV · Pasuruan, Indonesia</p><p>Motion-led visual communication and design production.</p></div><div class="exp-type">Professional experience</div></div>
-      <div class="exp-row"><div class="exp-date">Independent practice</div><div><h3>Brand Identity & Visual Design</h3><p>Selected projects include Amoretti Roasters, Personal Identity, Mauly Hijab, and an Alter Ego Esports rebranding concept.</p></div><div class="exp-type">Selected projects</div></div>
-      <div class="exp-row"><div class="exp-date">Tools</div><div><h3>Adobe Creative Cloud</h3><p>Photoshop · After Effects · Illustrator</p></div><div class="exp-type">Design toolkit</div></div>
-    </div>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:25px"><button class="btn primary" id="cvBtn2" type="button">Print / save CV as PDF ↓</button><a class="btn" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener">Portfolio profile ↗</a></div>
-  </div>
-</section>
-<section class="contact" id="contact">
-  <div class="wrap contact-grid">
-    <div><div class="kicker">04 / Have a project in mind?</div><h2>Let's make<br>it matter.</h2><p>Open to freelance collaborations and full-time opportunities. Reach out to discuss a project, a role, or a creative idea.</p><a class="btn" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener">Message via Behance ↗</a></div>
-    <div class="contact-links">
-      <a href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener"><span>Behance</span><span>↗</span></a>
-      <a href="https://linktr.ee/alwanfaiq" target="_blank" rel="noopener"><span>Linktree / Socials</span><span>↗</span></a>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><span>LinkedIn</span><span>↗</span></a>
-    </div>
-  </div>
-</section>
-</main>
-<footer class="wrap footer"><span>© <span id="year"></span> <strong>Alwan Faiq</strong> — Independent creative</span><span>Designed with intention · Depok, Indonesia</span><a href="#home">Back to top ↑</a></footer>
-<script>
-const menuBtn=document.getElementById('menuBtn');
-const navlinks=document.getElementById('navlinks');
-menuBtn.addEventListener('click',()=>{const open=navlinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'CLOSE −':'MENU +';});
-navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navlinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='MENU +';}));
-function printCV(){window.print()}
-document.getElementById('cvBtn').addEventListener('click',printCV);
-document.getElementById('cvBtn2').addEventListener('click',printCV);
-document.getElementById('year').textContent=new Date().getFullYear();
-const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.animate([{opacity:0,transform:'translateY(18px)'},{opacity:1,transform:'translateY(0)'}],{duration:650,easing:'cubic-bezier(.2,.7,.2,1)',fill:'both'});revealObserver.unobserve(entry.target)}}),{threshold:.08});
-document.querySelectorAll('.section-head,.project,.about-grid,.exp-row').forEach(el=>revealObserver.observe(el));
-</script>
+
+    <!-- NAVIGATION HEADER WITH EXACT SVG LOGO -->
+    <nav class="sticky top-0 z-40 bg-[#0E1015]/95 backdrop-blur-md border-b border-[#262B38]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- BRAND LOGO SVG (Monogram + Custom Logotype) -->
+                <a href="#hero" class="flex items-center space-x-3 group">
+                    <svg class="h-9 w-auto" viewBox="0 0 520 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Monogram af -->
+                        <g fill="#E61C14">
+                            <!-- Monogram Top Arch & Loop 'af' -->
+                            <path d="M48 18 C26 18 10 32 10 56 C10 80 26 94 48 94 C64 94 76 86 84 74 L84 90 C84 104 72 112 54 112 C40 112 28 104 24 94 L10 100 C16 116 34 126 54 126 C82 126 100 108 100 86 L100 48 C100 36 90 28 78 28 L54 28 C34 28 24 38 24 56 C24 70 34 78 48 78 C60 78 72 70 72 56 C72 44 62 38 48 38 Z" />
+                            <path d="M42 6 C62 6 82 16 90 28 L76 36 C70 28 56 20 42 20 C28 20 18 26 18 36 C18 46 28 50 46 54 C70 58 86 66 86 86 C86 108 64 118 40 118 C18 118 4 106 0 88 L14 82 C18 94 28 102 40 102 C54 102 68 94 68 86 C68 76 56 72 40 68 C18 64 4 54 4 36 C4 18 20 6 42 6 Z" />
+                            
+                            <!-- Custom Wordmark 'alwanfaiq' -->
+                            <!-- a -->
+                            <path d="M125 45 C115 45 108 52 108 65 C108 78 115 85 125 85 C132 85 137 81 140 76 L140 84 L149 84 L149 46 L140 46 L140 54 C137 49 132 45 125 45 Z M128 54 C135 54 140 60 140 65 C140 70 135 76 128 76 C121 76 116 70 116 65 C116 60 121 54 128 54 Z"/>
+                            <!-- l -->
+                            <path d="M158 26 L167 26 L167 84 L158 84 Z"/>
+                            <!-- w -->
+                            <path d="M176 46 L185 84 L193 84 L200 55 L207 84 L215 84 L224 46 L214 46 L208 73 L201 46 L198 46 L191 73 L185 46 Z"/>
+                            <!-- a -->
+                            <path d="M239 45 C229 45 222 52 222 65 C222 78 229 85 239 85 C246 85 251 81 254 76 L254 84 L263 84 L263 46 L254 46 L254 54 C251 49 246 45 239 45 Z M242 54 C249 54 254 60 254 65 C254 70 249 76 242 76 C235 76 230 70 230 65 C230 60 235 54 242 54 Z"/>
+                            <!-- n -->
+                            <path d="M273 46 L273 84 L282 84 L282 58 C282 54 286 52 291 52 C296 52 300 54 300 60 L300 84 L309 84 L309 58 C309 49 301 45 291 45 C284 45 278 48 275 53 L275 46 Z"/>
+                            
+                            <!-- faiq -->
+                            <!-- F -->
+                            <path d="M322 30 L344 30 L344 38 L331 38 L331 52 L342 52 L342 60 L331 60 L331 84 L322 84 Z"/>
+                            <!-- a -->
+                            <path d="M358 45 C348 45 341 52 341 65 C341 78 348 85 358 85 C365 85 370 81 373 76 L373 84 L382 84 L382 46 L373 46 L373 54 C370 49 365 45 358 45 Z M361 54 C368 54 373 60 373 65 C373 70 368 76 361 76 C354 76 349 70 349 65 C349 60 354 54 361 54 Z"/>
+                            <!-- i -->
+                            <path d="M392 46 L401 46 L401 84 L392 84 Z M392 30 L401 30 L401 38 L392 38 Z"/>
+                            <!-- q -->
+                            <path d="M416 45 C406 45 399 52 399 65 C399 78 406 85 416 85 C423 85 428 81 431 76 L431 100 L440 100 L440 46 L431 46 L431 54 C428 49 423 45 416 45 Z M419 54 C426 54 431 60 431 65 C431 70 426 76 419 76 C412 76 407 70 407 65 C407 60 412 54 419 54 Z"/>
+                        </g>
+                    </svg>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8 text-xs font-semibold text-textMuted uppercase tracking-widest">
+                    <a href="#archive" class="hover:text-brandRed transition-colors">Portofolio</a>
+                    <a href="#brand-system" class="hover:text-brandRed transition-colors">Brand Spec</a>
+                    <a href="#cv" class="hover:text-brandRed transition-colors">Rekam Jejak CV</a>
+                    <a href="#contact" class="hover:text-brandRed transition-colors">Kontak</a>
+                </div>
+
+                <!-- Behance Callout -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded bg-brandRed hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center space-x-2 shadow-lg shadow-red-900/30">
+                        <i class="fa-brands fa-behance text-sm"></i>
+                        <span>Archive 2023–2026</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-toggle" class="md:hidden text-textMuted hover:text-white p-2">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden border-b border-[#262B38] px-4 py-4 space-y-3 bg-[#0E1015] text-xs font-bold uppercase tracking-wider text-textMuted">
+            <a href="#archive" class="block hover:text-brandRed py-1">Portofolio Karya</a>
+            <a href="#brand-system" class="block hover:text-brandRed py-1">Identitas Brand</a>
+            <a href="#cv" class="block hover:text-brandRed py-1">Curriculum Vitae</a>
+            <a href="#contact" class="block hover:text-brandRed py-1">Kontak</a>
+            <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" class="block text-brandYellow pt-2 border-t border-[#262B38]">
+                Buka Behance Gallery &rarr;
+            </a>
+        </div>
+    </nav>
+
+    <!-- MAIN BODY CONTAINER -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-24 space-y-24">
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="space-y-8 pt-4">
+            
+            <div class="flex flex-wrap items-center gap-3">
+                <span class="px-3 py-1 rounded bg-brandRed/10 border border-brandRed/40 brand-tag text-brandRed flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-brandRed animate-pulse"></span>
+                    OFFICIAL PERSONAL IDENTITY SYSTEM
+                </span>
+                <span class="brand-tag text-brandYellow">BEHANCE ARCHIVE 2023 — 2026</span>
+            </div>
+
+            <!-- Vector SVG Hero Logo -->
+            <div class="space-y-3">
+                <div class="max-w-2xl py-2">
+                    <svg viewBox="0 0 520 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                        <g fill="#E61C14">
+                            <!-- Monogram af -->
+                            <path d="M48 18 C26 18 10 32 10 56 C10 80 26 94 48 94 C64 94 76 86 84 74 L84 90 C84 104 72 112 54 112 C40 112 28 104 24 94 L10 100 C16 116 34 126 54 126 C82 126 100 108 100 86 L100 48 C100 36 90 28 78 28 L54 28 C34 28 24 38 24 56 C24 70 34 78 48 78 C60 78 72 70 72 56 C72 44 62 38 48 38 Z" />
+                            <path d="M42 6 C62 6 82 16 90 28 L76 36 C70 28 56 20 42 20 C28 20 18 26 18 36 C18 46 28 50 46 54 C70 58 86 66 86 86 C86 108 64 118 40 118 C18 118 4 106 0 88 L14 82 C18 94 28 102 40 102 C54 102 68 94 68 86 C68 76 56 72 40 68 C18 64 4 54 4 36 C4 18 20 6 42 6 Z" />
+                            
+                            <!-- Custom Wordmark 'alwanfaiq' -->
+                            <path d="M125 45 C115 45 108 52 108 65 C108 78 115 85 125 85 C132 85 137 81 140 76 L140 84 L149 84 L149 46 L140 46 L140 54 C137 49 132 45 125 45 Z M128 54 C135 54 140 60 140 65 C140 70 135 76 128 76 C121 76 116 70 116 65 C116 60 121 54 128 54 Z"/>
+                            <path d="M158 26 L167 26 L167 84 L158 84 Z"/>
+                            <path d="M176 46 L185 84 L193 84 L200 55 L207 84 L215 84 L224 46 L214 46 L208 73 L201 46 L198 46 L191 73 L185 46 Z"/>
+                            <path d="M239 45 C229 45 222 52 222 65 C222 78 229 85 239 85 C246 85 251 81 254 76 L254 84 L263 84 L263 46 L254 46 L254 54 C251 49 246 45 239 45 Z M242 54 C249 54 254 60 254 65 C254 70 249 76 242 76 C235 76 230 70 230 65 C230 60 235 54 242 54 Z"/>
+                            <path d="M273 46 L273 84 L282 84 L282 58 C282 54 286 52 291 52 C296 52 300 54 300 60 L300 84 L309 84 L309 58 C309 49 301 45 291 45 C284 45 278 48 275 53 L275 46 Z"/>
+                            <path d="M322 30 L344 30 L344 38 L331 38 L331 52 L342 52 L342 60 L331 60 L331 84 L322 84 Z"/>
+                            <path d="M358 45 C348 45 341 52 341 65 C341 78 348 85 358 85 C365 85 370 81 373 76 L373 84 L382 84 L382 46 L373 46 L373 54 C370 49 365 45 358 45 Z M361 54 C368 54 373 60 373 65 C373 70 368 76 361 76 C354 76 349 70 349 65 C349 60 354 54 361 54 Z"/>
+                            <path d="M392 46 L401 46 L401 84 L392 84 Z M392 30 L401 30 L401 38 L392 38 Z"/>
+                            <path d="M416 45 C406 45 399 52 399 65 C399 78 406 85 416 85 C423 85 428 81 431 76 L431 100 L440 100 L440 46 L431 46 L431 54 C428 49 423 45 416 45 Z M419 54 C426 54 431 60 431 65 C431 70 426 76 419 76 C412 76 407 70 407 65 C407 60 412 54 419 54 Z"/>
+                        </g>
+                    </svg>
+                </div>
+                <h1 class="text-xl sm:text-3xl font-extrabold text-brandYellow font-heading tracking-tight">
+                    Motion Designer & Visual Branding Specialist
+                </h1>
+            </div>
+
+            <p class="text-base sm:text-lg text-textMuted max-w-3xl leading-relaxed font-normal">
+                Spesialis dalam merancang paket siaran animasi broadcast motion graphics (YouTube Live & Event), sistem identitas visual brand, ilustrasi streetwear, serta antarmuka perangkat lunak web modern.
+            </p>
+
+            <!-- Quick Capabilities Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl pt-2">
+                <div class="brand-card p-4 rounded">
+                    <div class="brand-tag text-brandYellow">SPESIALISASI 01</div>
+                    <div class="text-sm font-bold text-textLight mt-1 font-heading">Broadcast Motion</div>
+                    <div class="text-[11px] text-textMuted mt-0.5">Bumper, Lower Thirds, OBS Live</div>
+                </div>
+                <div class="brand-card p-4 rounded">
+                    <div class="brand-tag text-brandYellow">SPESIALISASI 02</div>
+                    <div class="text-sm font-bold text-textLight mt-1 font-heading">Brand Identity</div>
+                    <div class="text-[11px] text-textMuted mt-0.5">Guidelines & Logo Geometry</div>
+                </div>
+                <div class="brand-card p-4 rounded">
+                    <div class="brand-tag text-brandYellow">SPESIALISASI 03</div>
+                    <div class="text-sm font-bold text-textLight mt-1 font-heading">Apparel Graphics</div>
+                    <div class="text-[11px] text-textMuted mt-0.5">Streetwear & Print Layout</div>
+                </div>
+                <div class="brand-card p-4 rounded">
+                    <div class="brand-tag text-brandYellow">SPESIALISASI 04</div>
+                    <div class="text-sm font-bold text-textLight mt-1 font-heading">Digital Product</div>
+                    <div class="text-[11px] text-textMuted mt-0.5">Tauri Desktop & Web Apps</div>
+                </div>
+            </div>
+
+            <div id="hero-cta" class="flex flex-wrap items-center gap-4 pt-4">
+                <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded bg-brandRed hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center space-x-2 shadow-lg shadow-red-900/30">
+                    <i class="fa-brands fa-behance text-base"></i>
+                    <span>Archive Works 2023–2026</span>
+                </a>
+
+                <a href="https://www.behance.net/gallery/170032623/Personal-Identity" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded brand-card text-textLight hover:border-brandYellow font-bold text-xs uppercase tracking-wider transition-colors flex items-center space-x-2">
+                    <i class="fa-solid fa-swatchbook text-brandYellow"></i>
+                    <span>Personal Identity Spec</span>
+                </a>
+
+                <button onclick="copyEmail()" class="px-4 py-3.5 rounded brand-card text-textMuted hover:text-white transition-colors flex items-center space-x-2 text-xs font-bold" title="Salin Email">
+                    <i class="fa-regular fa-copy text-brandYellow"></i>
+                    <span>Salin Email</span>
+                </button>
+            </div>
+
+        </section>
+
+        <div class="brand-divider"></div>
+
+        <!-- ARCHIVED WORKS & BRAND SPEC CARDS -->
+        <section id="archive" class="space-y-8">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+                <div>
+                    <span class="brand-tag text-brandYellow mb-1 block">01 / OFFICIAL BEHANCE EXHIBITIONS</span>
+                    <h2 class="text-3xl font-extrabold font-heading text-textLight">Koleksi Portofolio Utam</h2>
+                </div>
+                <span class="text-xs text-textMuted font-mono">Dipublikasikan di Behance</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Archive Card 1: Archived Works -->
+                <div class="brand-card rounded-lg p-6 sm:p-8 space-y-6 relative overflow-hidden group border-l-4 border-l-brandRed">
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="brand-tag text-brandRed font-bold">EXHIBITION ARCHIVE</span>
+                            <i class="fa-brands fa-behance text-2xl text-textMuted group-hover:text-brandRed transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-heading text-textLight group-hover:text-brandYellow transition-colors">
+                            Portfolio Archived Works (2023–2026)
+                        </h3>
+                    </div>
+
+                    <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
+                        Arsip komprehensif karya motion graphics broadcast live media, identitas visual brand streetwear, desain kemasan produk, dan antarmuka aplikasi web interaktif.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300">Broadcast Motion</span>
+                        <span class="px-2.5 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300">Streetwear Layout</span>
+                        <span class="px-2.5 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300">Live OBS Assets</span>
+                    </div>
+
+                    <div class="pt-4 border-t border-[#262B38] flex items-center justify-between">
+                        <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-brandRed hover:text-red-400 flex items-center space-x-2">
+                            <span>Buka Behance Gallery</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <span class="brand-tag text-[10px] text-textMuted">ID: 254504617</span>
+                    </div>
+                </div>
+
+                <!-- Archive Card 2: Personal Identity System -->
+                <div class="brand-card rounded-lg p-6 sm:p-8 space-y-6 relative overflow-hidden group border-l-4 border-l-brandYellow">
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="brand-tag text-brandYellow font-bold">BRAND SYSTEM SPEC</span>
+                            <i class="fa-solid fa-palette text-2xl text-textMuted group-hover:text-brandYellow transition-colors"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-heading text-textLight group-hover:text-brandRed transition-colors">
+                            Personal Identity System (2026)
+                        </h3>
+                    </div>
+
+                    <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
+                        Spesifikasi sistem panduan brand resmi Alwan Faiq yang mengatur konstruksi monogram 'af', pilihan skema warna Vivid Red & Amber Yellow, serta aplikasi merchandise.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300">Monogram Grid</span>
+                        <span class="px-2.5 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300">Color System</span>
+                        <span class="px-2.5 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300">Merchandise Layout</span>
+                    </div>
+
+                    <div class="pt-4 border-t border-[#262B38] flex items-center justify-between">
+                        <a href="https://www.behance.net/gallery/170032623/Personal-Identity" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-brandYellow hover:text-yellow-300 flex items-center space-x-2">
+                            <span>Buka Dokumentasi Brand System</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <span class="brand-tag text-[10px] text-textMuted">ID: 170032623</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BENTO SHOWCASE GRID -->
+        <section id="projects" class="space-y-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                <div>
+                    <span class="brand-tag text-brandYellow mb-1 block">02 / WORK BENTO SHOWCASE</span>
+                    <h2 class="text-3xl font-extrabold font-heading text-textLight">Katalog Proyek Terpilih</h2>
+                </div>
+
+                <!-- Category Filter Buttons -->
+                <div id="project-filter" class="flex flex-wrap gap-2 text-xs font-bold">
+                    <button onclick="filterProjects('all')" id="filter-all" class="filter-btn active px-3.5 py-2 rounded bg-brandRed text-white transition-colors">
+                        Semua
+                    </button>
+                    <button onclick="filterProjects('motion')" id="filter-motion" class="filter-btn px-3.5 py-2 rounded brand-card text-textMuted hover:text-white transition-colors">
+                        Motion Graphics
+                    </button>
+                    <button onclick="filterProjects('branding')" id="filter-branding" class="filter-btn px-3.5 py-2 rounded brand-card text-textMuted hover:text-white transition-colors">
+                        Visual Identity
+                    </button>
+                    <button onclick="filterProjects('digital')" id="filter-digital" class="filter-btn px-3.5 py-2 rounded brand-card text-textMuted hover:text-white transition-colors">
+                        Web & Tech
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bento Items Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Project 1: Dalwa TV -->
+                <div class="project-item brand-card rounded-lg p-6 space-y-4 md:col-span-2 cursor-pointer group" data-category="motion" onclick="openModal('dalwatv')">
+                    <div class="flex items-center justify-between border-b border-[#262B38] pb-3">
+                        <span class="brand-tag text-brandRed font-bold">BROADCAST MEDIA • MOTION GRAPHICS</span>
+                        <i class="fa-solid fa-circle-play text-brandYellow group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-bold font-heading text-textLight group-hover:text-brandYellow transition-colors">
+                            Dalwa TV Creative Agency
+                        </h3>
+                        <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
+                            Pengembangan paket animasi siaran langsung (YouTube Live) standar siaran media broadcast. Termasuk bumper intro 60 FPS, lower third dinamis, stinger transition, dan visual backdrop panggung live.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="brand-tag text-[10px] text-slate-300">After Effects</span>
+                        <span class="brand-tag text-[10px] text-slate-300">OBS Live Broadcast</span>
+                        <span class="brand-tag text-[10px] text-slate-300">Stage Motion</span>
+                    </div>
+                    <div class="text-xs font-bold text-brandRed pt-2 flex items-center space-x-2">
+                        <span>Detail Proyek</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </div>
+                </div>
+
+                <!-- Project 2: I'LLBEST! Apparel -->
+                <div class="project-item brand-card rounded-lg p-6 space-y-4 cursor-pointer group" data-category="branding" onclick="openModal('illbest')">
+                    <div class="flex items-center justify-between border-b border-[#262B38] pb-3">
+                        <span class="brand-tag text-brandYellow font-bold">STREETWEAR GRAPHICS</span>
+                        <i class="fa-solid fa-shirt text-brandRed group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-bold font-heading text-textLight group-hover:text-brandRed transition-colors">
+                            I'LLBEST! Apparel Brand
+                        </h3>
+                        <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
+                            Identitas visual merek pakaian streetwear, tipografi sablon produk, ilustrasi Ligne Claire, dan kemasan eksklusif.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="brand-tag text-[10px] text-slate-300">Adobe Illustrator</span>
+                        <span class="brand-tag text-[10px] text-slate-300">Apparel Layout</span>
+                    </div>
+                    <div class="text-xs font-bold text-brandYellow pt-2 flex items-center space-x-2">
+                        <span>Detail Proyek</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </div>
+                </div>
+
+                <!-- Project 3: SAQI Beverage Co. -->
+                <div class="project-item brand-card rounded-lg p-6 space-y-4 cursor-pointer group" data-category="digital" onclick="openModal('saqi')">
+                    <div class="flex items-center justify-between border-b border-[#262B38] pb-3">
+                        <span class="brand-tag text-brandYellow font-bold">BRANDING & WEB POS APP</span>
+                        <i class="fa-solid fa-mug-hot text-brandYellow group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-bold font-heading text-textLight group-hover:text-brandYellow transition-colors">
+                            SAQI Beverage Co.
+                        </h3>
+                        <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
+                            Perancangan kemasan produk kopi/latte botol dipadukan dengan pembuatan sistem Kasir POS web kustom.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="brand-tag text-[10px] text-slate-300">Packaging Design</span>
+                        <span class="brand-tag text-[10px] text-slate-300">Web POS App</span>
+                    </div>
+                    <div class="text-xs font-bold text-brandRed pt-2 flex items-center space-x-2">
+                        <span>Detail Proyek</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </div>
+                </div>
+
+                <!-- Project 4: Alfa History -->
+                <div class="project-item brand-card rounded-lg p-6 space-y-4 cursor-pointer group" data-category="motion" onclick="openModal('alfahistory')">
+                    <div class="flex items-center justify-between border-b border-[#262B38] pb-3">
+                        <span class="brand-tag text-brandRed font-bold">DOCUMENTARY MOTION</span>
+                        <i class="fa-solid fa-film text-brandRed group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-bold font-heading text-textLight group-hover:text-brandYellow transition-colors">
+                            Alfa History Media
+                        </h3>
+                        <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
+                            Visual branding dan motion graphics untuk konten media dokumenter sejarah, grafik infografik dinamis, serta layout presentasi.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="brand-tag text-[10px] text-slate-300">Documentary Motion</span>
+                        <span class="brand-tag text-[10px] text-slate-300">Infographic Visual</span>
+                    </div>
+                    <div class="text-xs font-bold text-brandRed pt-2 flex items-center space-x-2">
+                        <span>Detail Proyek</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </div>
+                </div>
+
+                <!-- Project 5: NOMAD Desktop Utility -->
+                <div class="project-item brand-card rounded-lg p-6 space-y-4 cursor-pointer group" data-category="digital" onclick="openModal('nomad')">
+                    <div class="flex items-center justify-between border-b border-[#262B38] pb-3">
+                        <span class="brand-tag text-brandYellow font-bold">TAURI DESKTOP UTILITY</span>
+                        <i class="fa-solid fa-laptop-code text-brandYellow group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-bold font-heading text-textLight group-hover:text-brandRed transition-colors">
+                            NOMAD Desktop Utility
+                        </h3>
+                        <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
+                            Aplikasi desktop overlay notch interaktif yang dibangun menggunakan Tauri (Rust) & Next.js dengan visualizer audio real-time.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="brand-tag text-[10px] text-slate-300">Tauri (Rust)</span>
+                        <span class="brand-tag text-[10px] text-slate-300">Next.js UI</span>
+                        <span class="brand-tag text-[10px] text-slate-300">Web Audio API</span>
+                    </div>
+                    <div class="text-xs font-bold text-brandYellow pt-2 flex items-center space-x-2">
+                        <span>Detail Proyek</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </div>
+                </div>
+
+                <!-- Project 6: ZON Grill -->
+                <div class="project-item brand-card rounded-lg p-6 space-y-4 cursor-pointer group md:col-span-3" data-category="branding" onclick="openModal('zongrill')">
+                    <div class="flex items-center justify-between border-b border-[#262B38] pb-3">
+                        <span class="brand-tag text-brandYellow font-bold">CULINARY BRANDING & STRATEGY</span>
+                        <i class="fa-solid fa-fire text-brandRed group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="space-y-2 md:col-span-2">
+                            <h3 class="text-xl font-bold font-heading text-textLight group-hover:text-brandYellow transition-colors">
+                                ZON Grill & Home Service
+                            </h3>
+                            <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
+                                Konsep identitas visual komprehensif untuk usaha kuliner BBQ & Grill. Mencakup perancangan maskot, tata letak sistem menu restoran, kemasan food-grade, serta strategi promosi banner digital.
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-between space-y-3">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="brand-tag text-[10px] text-slate-300">Culinary Identity</span>
+                                <span class="brand-tag text-[10px] text-slate-300">Menu Layout</span>
+                                <span class="brand-tag text-[10px] text-slate-300">Packaging</span>
+                            </div>
+                            <div class="text-xs font-bold text-brandRed flex items-center space-x-2">
+                                <span>Detail Proyek</span>
+                                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="brand-divider"></div>
+
+        <!-- BRAND GUIDELINES SPECIFICATION -->
+        <section id="brand-system" class="space-y-8">
+            <div>
+                <span class="brand-tag text-brandYellow mb-1 block">03 / BRAND SYSTEM SPECIFICATION</span>
+                <h2 class="text-3xl font-extrabold font-heading text-textLight">Pedoman Identitas Brand</h2>
+            </div>
+
+            <div class="brand-card rounded-lg p-6 sm:p-8 space-y-8 border-t-4 border-t-brandRed">
+                
+                <!-- Swatches -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold font-heading text-textLight">1. Skema Warna Resmi</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <div class="space-y-2">
+                            <div class="h-20 rounded bg-[#E61C14] border border-white/10 flex items-end p-2 text-white font-mono text-xs font-bold">
+                                #E61C14
+                            </div>
+                            <div class="text-xs font-bold text-textLight">Primary Vivid Red</div>
+                            <div class="text-[10px] text-textMuted">Aksen utama & logo monogram</div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-20 rounded bg-[#FFC000] border border-white/10 flex items-end p-2 text-black font-mono text-xs font-bold">
+                                #FFC000
+                            </div>
+                            <div class="text-xs font-bold text-textLight">Amber Yellow</div>
+                            <div class="text-[10px] text-textMuted">Warna sekunder & sorotan</div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-20 rounded bg-[#0E1015] border border-[#262B38] flex items-end p-2 text-white font-mono text-xs font-bold">
+                                #0E1015
+                            </div>
+                            <div class="text-xs font-bold text-textLight">Dark Slate</div>
+                            <div class="text-[10px] text-textMuted">Latar belakang utama aplikasi</div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-20 rounded bg-[#F4F5F7] border border-white/10 flex items-end p-2 text-black font-mono text-xs font-bold">
+                                #F4F5F7
+                            </div>
+                            <div class="text-xs font-bold text-textLight">Crisp Off-White</div>
+                            <div class="text-[10px] text-textMuted">Tipografi kontras tinggi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Geometry & Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-[#262B38]">
+                    <div class="space-y-3">
+                        <h3 class="text-lg font-bold font-heading text-textLight">2. Konstruksi Vector Monogram</h3>
+                        <p class="text-xs text-textMuted leading-relaxed">
+                            Monogram 'af' dibentuk dari modul geometris fluida yang menyatu secara presisi. Memiliki rasio seimbang untuk aplikasi media cetak, apparel streetwear, maupun ikon digital resolution-independent.
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="text-lg font-bold font-heading text-textLight">3. Hierarki Tipografi</h3>
+                        <p class="text-xs text-textMuted leading-relaxed">
+                            Proyek dan antarmuka ini mengkombinasikan tipe huruf geometris kontemporer <strong class="text-textLight font-semibold">Space Grotesk</strong> untuk headline dan <strong class="text-textLight font-semibold">Inter</strong> untuk body text demi tingkat keterbacaan yang optimal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="brand-divider"></div>
+
+        <!-- REKAM JEJAK & CV TABBED -->
+        <section id="cv" class="space-y-8">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+                <div>
+                    <span class="brand-tag text-brandYellow mb-1 block">04 / CURRICULUM VITAE</span>
+                    <h2 class="text-3xl font-extrabold font-heading text-textLight">Rekam Jejak & Pengalaman</h2>
+                </div>
+
+                <button onclick="window.print()" class="print-hidden px-4 py-2.5 rounded bg-brandRed hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center space-x-2">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Cetak PDF</span>
+                </button>
+            </div>
+
+            <!-- CV Navigation Tabs -->
+            <div class="cv-tab-nav flex border-b border-[#262B38] text-xs font-bold tracking-wider uppercase">
+                <button onclick="switchTab('exp')" id="btn-exp" class="py-3 px-6 border-b-2 border-brandRed text-brandRed transition-colors">
+                    Pengalaman Kerja
+                </button>
+                <button onclick="switchTab('skills')" id="btn-skills" class="py-3 px-6 border-b-2 border-transparent text-textMuted hover:text-white transition-colors">
+                    Keahlian & Tools
+                </button>
+                <button onclick="switchTab('edu')" id="btn-edu" class="py-3 px-6 border-b-2 border-transparent text-textMuted hover:text-white transition-colors">
+                    Pendidikan & Project
+                </button>
+            </div>
+
+            <!-- CV Tab Panels -->
+            <div class="brand-card rounded-lg p-6 sm:p-8 space-y-8">
+                
+                <!-- TAB 1: Pengalaman Kerja -->
+                <div id="tab-exp" class="cv-panel space-y-8">
+                    
+                    <div class="space-y-2 border-b border-[#262B38] pb-6 last:border-0 last:pb-0">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between text-sm">
+                            <h3 class="font-bold text-textLight text-base font-heading">Lead Motion Graphics Artist & Creative Director</h3>
+                            <span class="brand-tag text-brandRed font-bold">2022 — SEKARANG</span>
+                        </div>
+                        <div class="text-xs text-brandYellow font-semibold">Dalwa TV Creative Agency</div>
+                        <ul class="list-disc list-inside text-xs text-textMuted space-y-1.5 pt-2 leading-relaxed">
+                            <li>Memproduksi seluruh paket animasi motion graphics siaran langsung (YouTube Live) berstandar siaran TV.</li>
+                            <li>Mengembangkan bumper intro 60 FPS, lower third dinamis, stinger transition, dan visual backdrop panggung event.</li>
+                            <li>Mengarahkan arahan visual siaran langsung dan konsistensi brand siaran secara teknis dan estetis.</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-2 border-b border-[#262B38] pb-6 last:border-0 last:pb-0">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between text-sm">
+                            <h3 class="font-bold text-textLight text-base font-heading">Founder & Lead Apparel Graphic Designer</h3>
+                            <span class="brand-tag text-brandYellow font-bold">2021 — SEKARANG</span>
+                        </div>
+                        <div class="text-xs text-brandYellow font-semibold">I'LLBEST! Apparel Brand</div>
+                        <ul class="list-disc list-inside text-xs text-textMuted space-y-1.5 pt-2 leading-relaxed">
+                            <li>Merancang konsep identitas visual merek pakaian streetwear dan karya grafik ilustrasi produk.</li>
+                            <li>Membuat tipografi sablon produk, packaging eksklusif, dan strategi promosi media digital.</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-2">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between text-sm">
+                            <h3 class="font-bold text-textLight text-base font-heading">Visual Brand & Software Developer</h3>
+                            <span class="brand-tag text-textMuted font-bold">2023 — 2024</span>
+                        </div>
+                        <div class="text-xs text-brandYellow font-semibold">SAQI Beverage Co. & NOMAD Utility App</div>
+                        <ul class="list-disc list-inside text-xs text-textMuted space-y-1.5 pt-2 leading-relaxed">
+                            <li>Mendesain sistem visual kemasan latte serta aplikasi Kasir POS web kustom.</li>
+                            <li>Membangun aplikasi desktop overlay notch dengan Tauri (Rust) & Next.js dengan visualizer audio real-time.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- TAB 2: Keahlian & Tools -->
+                <div id="tab-skills" class="cv-panel hidden space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div class="space-y-3">
+                            <h4 class="font-bold text-textLight text-sm font-heading border-b border-[#262B38] pb-2 text-brandRed">Motion & Broadcast</h4>
+                            <div class="text-xs text-slate-300 space-y-1.5 font-mono">
+                                <div>• Adobe After Effects (60FPS)</div>
+                                <div>• Adobe Premiere Pro</div>
+                                <div>• OBS Broadcast Studio</div>
+                                <div>• Stage Visualizer Motion</div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <h4 class="font-bold text-textLight text-sm font-heading border-b border-[#262B38] pb-2 text-brandYellow">Branding & Layout</h4>
+                            <div class="text-xs text-slate-300 space-y-1.5 font-mono">
+                                <div>• Adobe Illustrator</div>
+                                <div>• Adobe Photoshop</div>
+                                <div>• Streetwear Design System</div>
+                                <div>• Packaging Layout</div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <h4 class="font-bold text-textLight text-sm font-heading border-b border-[#262B38] pb-2 text-brandRed">Web & Tech Stack</h4>
+                            <div class="text-xs text-slate-300 space-y-1.5 font-mono">
+                                <div>• HTML5 / CSS3 / JavaScript</div>
+                                <div>• Tailwind CSS & React</div>
+                                <div>• Tauri Framework (Rust)</div>
+                                <div>• Web Audio API Visualizer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: Pendidikan & Project -->
+                <div id="tab-edu" class="cv-panel hidden space-y-6">
+                    <div class="space-y-4">
+                        <div class="border-b border-[#262B38] pb-4">
+                            <span class="brand-tag text-brandRed">Pendidikan Akademik</span>
+                            <h3 class="font-bold text-textLight text-base font-heading mt-1">Kandidat Sarjana Desain Komunikasi Visual</h3>
+                            <p class="text-xs text-textMuted mt-1">Fokus pada Broadcast Motion Graphics, Identitas Visual Brand, dan Perancangan Antarmuka Digital.</p>
+                        </div>
+
+                        <div>
+                            <span class="brand-tag text-brandYellow">Tautan Portofolio Resmi</span>
+                            <h3 class="font-bold text-textLight text-base font-heading mt-1">Alwan Faiq Portfolio Exhibitions</h3>
+                            <div class="space-y-2 pt-2 font-mono text-xs">
+                                <div>
+                                    <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" class="text-brandRed hover:underline">
+                                        • Portfolio Archived Works (2023–2026) &rarr;
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.behance.net/gallery/170032623/Personal-Identity" target="_blank" class="text-brandYellow hover:underline">
+                                        • Personal Identity System Guidelines (2026) &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="pt-4">
+            <div class="brand-card rounded-lg p-8 sm:p-10 space-y-6 relative overflow-hidden border-t-4 border-t-brandRed">
+                <div class="space-y-2">
+                    <span class="brand-tag text-brandYellow">HUBUNGI ALWAN FAIQ</span>
+                    <h2 class="text-3xl font-extrabold font-heading text-textLight">Mari Berkolaborasi</h2>
+                    <p class="text-xs sm:text-sm text-textMuted max-w-xl leading-relaxed">
+                        Tersedia untuk pengerjaan proyek broadcast motion graphics, pengembangan identitas visual brand, serta perancangan aplikasi web interaktif.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <button onclick="copyEmail()" class="px-6 py-3.5 rounded bg-brandRed hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center space-x-2">
+                        <i class="fa-regular fa-envelope text-base"></i>
+                        <span>alwanfaiq.studio@gmail.com</span>
+                    </button>
+
+                    <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded brand-card text-textLight hover:border-brandYellow font-bold text-xs uppercase tracking-wider transition-colors flex items-center space-x-2">
+                        <i class="fa-brands fa-behance text-brandYellow"></i>
+                        <span>Behance Gallery</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-[#262B38] py-8 text-xs text-textMuted">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <span class="font-heading font-extrabold text-textLight">ALWAN <span class="text-brandRed">FAIQ</span></span>
+                <span>© <span id="year"></span>. Official Personal Identity.</span>
+            </div>
+            <div class="flex items-center space-x-6 font-semibold uppercase brand-tag text-[10px]">
+                <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" class="hover:text-brandRed transition-colors">Behance Archive</a>
+                <a href="https://www.behance.net/gallery/170032623/Personal-Identity" target="_blank" class="hover:text-brandYellow transition-colors">Brand Spec</a>
+                <a href="#hero" class="hover:text-white transition-colors">Ke Atas ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function copyEmail() {
+            const email = 'alwanfaiq.studio@gmail.com';
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(email).then(showToast);
+            } else {
+                const ta = document.createElement('textarea');
+                ta.value = email;
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                showToast();
+            }
+        }
+
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+                toast.classList.remove('translate-y-0', 'opacity-100');
+            }, 3000);
+        }
+
+        function switchTab(tabKey) {
+            document.querySelectorAll('.cv-panel').forEach(panel => {
+                panel.classList.add('hidden');
+            });
+            document.getElementById(`tab-${tabKey}`).classList.remove('hidden');
+
+            document.querySelectorAll('.cv-tab-nav button').forEach(btn => {
+                btn.classList.remove('border-brandRed', 'text-brandRed');
+                btn.classList.add('border-transparent', 'text-textMuted');
+            });
+
+            const activeBtn = document.getElementById(`btn-${tabKey}`);
+            activeBtn.classList.remove('border-transparent', 'text-textMuted');
+            activeBtn.classList.add('border-brandRed', 'text-brandRed');
+        }
+
+        function filterProjects(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-brandRed', 'text-white');
+                btn.classList.add('brand-card', 'text-textMuted');
+            });
+
+            const activeFilterBtn = document.getElementById(`filter-${category}`);
+            activeFilterBtn.classList.remove('brand-card', 'text-textMuted');
+            activeFilterBtn.classList.add('bg-brandRed', 'text-white');
+
+            const items = document.querySelectorAll('.project-item');
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        const projectData = {
+            dalwatv: {
+                title: 'Dalwa TV Creative Agency',
+                category: 'BROADCAST MEDIA • MOTION GRAPHICS',
+                role: 'Lead Motion Designer & Broadcast Specialist',
+                description: 'Pengembangan paket animasi siaran langsung (YouTube Live) berstandar siaran televisi. Proyek ini mencakup identitas gerak on-air lengkap untuk mendukung siaran langsung media.',
+                highlights: [
+                    'Bumper Intro & Outro 60 FPS dengan pergerakan kinetik yang mulus',
+                    'Lower Thirds dinamis yang dapat disesuaikan untuk nama narasumber & judul program',
+                    'Stinger Transition berdurasi presisi untuk perpindahan kamera live',
+                    'Visual Backdrop panggung untuk event besar dan pertunjukan langsung'
+                ],
+                tools: ['After Effects', 'Premiere Pro', 'OBS Studio', 'Photoshop'],
+                link: 'https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026'
+            },
+            illbest: {
+                title: "I'LLBEST! Apparel Brand",
+                category: 'STREETWEAR GRAPHICS & BRANDING',
+                role: 'Founder & Apparel Graphic Designer',
+                description: 'Perancangan identitas merek pakaian streetwear dari konsep awal hingga siap cetak. Berfokus pada eksperimen tipografi dan ilustrasi gaya Ligne Claire.',
+                highlights: [
+                    'Koleksi ilustrasi sablon t-shirt dan hoodie berskala presisi',
+                    'Desain packaging eksklusif, hangtag kustom, dan stiker promosi',
+                    'Strategi visual feed Instagram dan materi kampanye produk digital'
+                ],
+                tools: ['Adobe Illustrator', 'Adobe Photoshop', 'Screenprint Prep'],
+                link: 'https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026'
+            },
+            saqi: {
+                title: 'SAQI Beverage Co.',
+                category: 'BRANDING & WEB POS SOFTWARE',
+                role: 'Brand Designer & Front-End Developer',
+                description: 'Integrasi desain visual fisik dan perangkat lunak digital untuk brand minuman kopi/latte botol.',
+                highlights: [
+                    'Desain label botol beverage dengan hierarki informasi yang bersih',
+                    'Pengembangan aplikasi kasir POS berbasis web yang terintegrasi untuk manajemen transaksi kasir',
+                    'Palette warna produk yang ramah pelanggan dan adaptif'
+                ],
+                tools: ['Illustrator', 'HTML/Tailwind', 'JavaScript POS System'],
+                link: 'https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026'
+            },
+            alfahistory: {
+                title: 'Alfa History Media',
+                category: 'DOCUMENTARY MOTION GRAPHICS',
+                role: 'Creative Visual Designer',
+                description: 'Identitas visual dan motion graphics untuk media dokumenter sejarah. Menghadirkan narasi sejarah melalui grafik dinamis.',
+                highlights: [
+                    'Animasi infografik peta dan timeline sejarah',
+                    'Lower thirds dan judul episode bergaya arsip klasik',
+                    'Desain sampul thumbnail YouTube dan aset media sosial'
+                ],
+                tools: ['After Effects', 'Illustrator', 'Photoshop'],
+                link: 'https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026'
+            },
+            nomad: {
+                title: 'NOMAD Desktop Utility',
+                category: 'DESKTOP UTILITY & TAURI UI',
+                role: 'UI/UX Designer & Desktop Developer',
+                description: 'Aplikasi utilitas overlay notch desktop modern yang efisien dan interaktif untuk sistem operasi desktop.',
+                highlights: [
+                    'Antarmuka overlay notch yang dapat memuat widget audio visualizer real-time',
+                    'Dibangun menggunakan framework Tauri (Rust) untuk performa memori ultra-ringan',
+                    'Visualisasi Web Audio API dengan animasi spektrum responsif'
+                ],
+                tools: ['Tauri (Rust)', 'Next.js', 'Tailwind CSS', 'Web Audio API'],
+                link: 'https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026'
+            },
+            zongrill: {
+                title: 'ZON Grill & Home Service',
+                category: 'CULINARY BRANDING & STRATEGY',
+                role: 'Visual Brand Specialist',
+                description: 'Sistem identitas brand lengkap untuk restoran BBQ & Grill modern dengan karakter kasual dan berenergi.',
+                highlights: [
+                    'Desain maskot karakter dan sistem logo serbaguna',
+                    'Layout buku menu fisik dan digital berketerbacaan tinggi',
+                    'Packaging food-grade dan materi spanduk promosi out-of-home'
+                ],
+                tools: ['Illustrator', 'Photoshop', 'Brand Strategy'],
+                link: 'https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026'
+            }
+        };
+
+        function openModal(key) {
+            const data = projectData[key];
+            if (!data) return;
+
+            document.getElementById('modal-category').textContent = data.category;
+            document.getElementById('modal-title').textContent = data.title;
+            document.getElementById('modal-role').textContent = data.role;
+            document.getElementById('modal-description').textContent = data.description;
+            document.getElementById('modal-link').href = data.link;
+
+            const highlightsList = document.getElementById('modal-highlights');
+            highlightsList.innerHTML = '';
+            data.highlights.forEach(h => {
+                const li = document.createElement('li');
+                li.textContent = h;
+                highlightsList.appendChild(li);
+            });
+
+            const toolsContainer = document.getElementById('modal-tools');
+            toolsContainer.innerHTML = '';
+            data.tools.forEach(t => {
+                const span = document.createElement('span');
+                span.className = 'px-2 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300';
+                span.textContent = t;
+                toolsContainer.appendChild(span);
+            });
+
+            document.getElementById('project-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('project-modal').classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
