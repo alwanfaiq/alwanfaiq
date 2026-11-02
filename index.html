@@ -1,1007 +1,215 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alwan Faiq — Motion Designer & Visual Branding Specialist</title>
-    
-    <!-- Google Fonts: Space Grotesk (Headings) & Inter (Body) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" Quicksand>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brandRed: '#E61C14',
-                        brandYellow: '#FFC000',
-                        darkBg: '#0E1015',
-                        cardBg: '#161922',
-                        cardBorder: '#262B38',
-                        textLight: '#F4F5F7',
-                        textMuted: '#A0A7B5'
-                    },
-                    fontFamily: {
-                        sans: ['Rubik', 'sans-serif'],
-                        heading: ['Quicksand', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <style>
-        body {
-            background-color: #0E1015;
-            color: #F4F5F7;
-            font-family: 'Quicksand', Rubik;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .brand-card {
-            background-color: #161922;
-            border: 1px solid #262B38;
-            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .brand-card:hover {
-            border-color: #E61C14;
-            transform: translateY(-2px);
-        }
-
-        .brand-divider {
-            height: 1px;
-            background: linear-gradient(90deg, #E61C14 0%, #FFC000 40%, transparent 100%);
-        }
-
-        .brand-tag {
-            font-family: Quicksand;
-            font-size: 0.725rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
-        .modal-backdrop {
-            background-color: rgba(14, 16, 21, 0.88);
-            backdrop-filter: blur(8px);
-        }
-
-        /* Print Stylesheet for Cetak PDF */
-        @media print {
-            body {
-                background: white !important;
-                color: black !important;
-                font-size: 10pt;
-            }
-            nav, footer, .no-print, #hero-cta, #toast, #project-filter, .modal-backdrop, .print-hidden {
-                display: none !important;
-            }
-            .brand-card {
-                background: none !important;
-                border: none !important;
-                border-bottom: 1px solid #ccc !important;
-                padding: 10px 0 !important;
-                color: black !important;
-            }
-            .text-textMuted, .text-slate-400, .text-slate-300 {
-                color: #333 !important;
-            }
-            .text-textLight, h1, h2, h3, h4 {
-                color: black !important;
-            }
-            .cv-panel {
-                display: block !important;
-            }
-            .cv-tab-nav {
-                display: none !important;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alwan Faiq — Branding • Motion • Illustration</title>
+<meta name="description" content="Alwan Faiq — graphic designer, motion designer and illustrator. Brand identity, event visuals and digital campaigns. Open for freelance and remote work.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FF1107'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--red:#FF1107;--yellow:#FFCC00;--dark:#283539;--ink:#0F1416;--bg:#F1F3F4;--card:#DEE1E2;--white:#fff;--leaf:56px 0 56px 0}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Quicksand',sans-serif;background:var(--bg);color:var(--dark);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.rk{font-family:'Rubik',sans-serif;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.tag{font:600 12px 'Rubik';letter-spacing:.14em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:999px;font:600 14px 'Rubik';border:2px solid transparent;cursor:pointer;transition:.2s}
+.btn.y{background:var(--yellow);color:var(--ink)}.btn.y:hover{background:var(--ink);color:var(--yellow)}
+.btn.w{background:#fff;color:var(--red)}.btn.w:hover{background:var(--ink);color:#fff}
+.btn.o{border-color:currentColor}.btn.o:hover{background:#fff;color:var(--red)}
+nav{position:sticky;top:0;z-index:20;background:rgba(241,243,244,.9);backdrop-filter:blur(10px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+nav svg{height:30px;width:auto;color:var(--red);display:block}
+nav ul{display:flex;gap:28px;list-style:none;padding:0;font:500 14px 'Rubik'}
+nav ul a:hover{color:var(--red)}
+@media(max-width:760px){nav ul{display:none}}
+section{padding:36px 0}
+.hero{background:var(--red);color:#fff;border-radius:36px;overflow:hidden;display:grid;grid-template-columns:1.25fr .75fr;align-items:end;position:relative}
+.hero .txt{padding:56px 0 56px 56px;position:relative;z-index:1}
+.hero h1{font-size:clamp(44px,7vw,92px);line-height:.98;font-weight:800;margin:10px 0 14px;color:#fff}
+.hero .sub{font:500 italic 18px 'Quicksand';opacity:.95}
+.hero p.lead{max-width:520px;margin:22px 0 30px;opacity:.95;font-weight:500}
+.hero .ph{align-self:end;justify-self:center;height:100%;display:flex;align-items:flex-end;position:relative}
+.hero .ph:before{content:"";position:absolute;right:-50px;bottom:-50px;width:330px;height:330px;background:var(--yellow);border-radius:var(--leaf);transform:rotate(180deg)}
+.hero img{position:relative;width:min(100%,400px);height:auto;display:block}
+@media(max-width:820px){.hero{grid-template-columns:1fr}.hero .txt{padding:36px 28px 8px}.hero img{width:min(100%,320px)}.hero .ph:before{width:260px;height:260px;right:auto;left:50%;margin-left:-130px;bottom:-40px}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px}
+.stat{background:#fff;border-radius:24px;padding:20px 22px}
+.stat b{font:800 34px 'Rubik';color:var(--red);display:block;line-height:1.1}
+.stat span{font-weight:600;font-size:14px}
+@media(max-width:760px){.stats{grid-template-columns:1fr 1fr}}
+.tools{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:14px;padding:16px 22px;border:2px solid var(--red);border-radius:24px;background:#fff}
+.tools b{font:700 15px 'Rubik';margin-right:8px}
+.tl{display:flex;align-items:center;gap:8px;font:500 13px 'Rubik'}
+.tl i{font:700 13px 'Rubik';font-style:normal;width:34px;height:34px;border-radius:9px;display:grid;place-items:center}
+.head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:26px}
+.head h2{font-size:clamp(30px,4vw,44px);font-weight:700;line-height:1.1}
+.head h2:after{content:"";display:block;width:56px;height:4px;background:var(--red);margin-top:12px;border-radius:4px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.work{background:#fff;border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:10px;min-height:210px;transition:.25s;position:relative;overflow:hidden}
+.work:hover{background:var(--red);color:#fff;transform:translateY(-4px);border-radius:var(--leaf)}
+.work .tag{color:var(--red)}.work:hover .tag{color:var(--yellow)}
+.work h3{font-size:22px;font-weight:700;line-height:1.2}
+.work p{font-size:14px;font-weight:500;opacity:.8}
+.work .yr{margin-top:auto;font:600 13px 'Rubik';display:flex;justify-content:space-between;align-items:center}
+.work.big{grid-column:span 2;background:var(--dark);color:#fff}.work.big .tag{color:var(--yellow)}
+@media(max-width:560px){.work.big{grid-column:auto}}
+.bld{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:760px){.bld{grid-template-columns:1fr}}
+.bc{background:var(--dark);color:#fff;border-radius:28px;padding:32px;display:flex;flex-direction:column;gap:14px;transition:.25s}.bc:hover{border-radius:var(--leaf);background:var(--ink)}
+.bc .tag{color:var(--yellow)}.bc h3{font-size:26px;font-weight:700}.bc p{font-weight:500;opacity:.85}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}.chips span{font:500 12px ui-monospace,Menlo,monospace;border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:4px 12px}
+.panel{border-radius:32px;padding:40px}
+.exp{background:var(--card)}
+.tlx{position:relative;margin-left:8px;padding-left:34px;border-left:3px solid var(--red)}
+.it{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;padding-bottom:30px}
+.it:last-child{padding-bottom:0}
+.it:before{content:"";position:absolute;left:-44px;top:6px;width:14px;height:14px;background:var(--dark);border-radius:2px}
+.it h3{font-size:19px;font-weight:700}.it small{display:block;font:500 14px 'Quicksand'}
+.it .yr{font-weight:600;margin-top:6px;display:block}
+.it ul{padding-left:18px;font-size:14px;font-weight:500;columns:1}
+@media(max-width:640px){.it{grid-template-columns:1fr}.panel{padding:26px}}
+.exp2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+@media(max-width:820px){.exp2{grid-template-columns:1fr}}
+.dark{background:var(--ink);color:#fff}
+.dark h2{color:#fff;font-size:28px;margin-bottom:18px}
+.dark ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px 18px;font-weight:500}
+.dark li:before{content:"•";color:var(--yellow);margin-right:8px}
+.edu{background:var(--card)}.edu h2{font-size:28px;margin-bottom:18px}
+.edu p{margin-bottom:14px;font-size:14px;font-weight:500}.edu b{font:700 14px 'Rubik';display:block;text-transform:uppercase}
+.sw{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:640px){.sw{grid-template-columns:1fr}}
+.sw div{border-radius:var(--leaf);padding:26px;min-height:190px;display:flex;flex-direction:column;justify-content:flex-end;font:500 13px 'Rubik'}
+.sw b{font-size:17px}
+.type{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+@media(max-width:640px){.type{grid-template-columns:1fr}}
+.type div{border-radius:28px;padding:30px;display:flex;justify-content:space-between;align-items:end}
+.type .aa{font-size:84px;line-height:1}
+.contact{background:var(--red);color:#fff;border-radius:36px;padding:56px;position:relative;overflow:hidden}
+.contact:after{content:"";position:absolute;right:-70px;top:-70px;width:260px;height:260px;background:var(--yellow);border-radius:var(--leaf)}
+.contact h2{font-size:clamp(34px,5vw,60px);font-weight:800;line-height:1.05;max-width:620px;margin:8px 0 14px}
+.contact p{max-width:480px;font-weight:500;margin-bottom:26px}
+.contact .row{display:flex;flex-wrap:wrap;gap:12px;position:relative;z-index:1}
+@media(max-width:640px){.contact{padding:32px 26px}}
+footer{padding:30px 0 40px;font:500 13px 'Rubik'}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:3px solid var(--red);padding-top:22px}
+footer svg{height:22px;color:var(--red)}
+#toast{position:fixed;bottom:22px;right:22px;background:var(--ink);color:#fff;padding:12px 20px;border-radius:999px;font:500 14px 'Rubik';transform:translateY(80px);opacity:0;transition:.3s;z-index:50}
+#toast.on{transform:none;opacity:1}
+::selection{background:var(--red);color:#fff}
+</style>
 </head>
-<body class="selection:bg-brandRed selection:text-white">
-
-    <!-- Toast Notification -->
-    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-[#161922] border border-brandRed text-white px-5 py-3 rounded shadow-2xl text-xs flex items-center space-x-3">
-        <i class="fa-solid fa-check text-brandYellow text-sm"></i>
-        <span id="toast-text" class="font-medium">Email alwanfaiq.studio@gmail.com berhasil disalin!</span>
-    </div>
-
-    <!-- PROJECT DETAIL MODAL -->
-    <div id="project-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 modal-backdrop">
-        <div class="brand-card w-full max-w-2xl rounded-lg p-6 sm:p-8 space-y-6 max-h-[90vh] overflow-y-auto relative border-t-4 border-t-brandRed">
-            <button onclick="closeModal()" class="absolute top-5 right-5 text-textMuted hover:text-white p-2 text-lg">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <div class="space-y-2">
-                <span id="modal-category" class="brand-tag text-brandYellow">KATEGORI</span>
-                <h3 id="modal-title" class="text-2xl sm:text-3xl font-extrabold font-heading text-textLight">Judul Proyek</h3>
-                <div id="modal-role" class="text-xs font-semibold text-brandRed">Peran Utama</div>
-            </div>
-            <div class="border-t border-[#262B38]"></div>
-            <div class="space-y-4 text-xs sm:text-sm text-textMuted leading-relaxed">
-                <p id="modal-description">Deskripsi rinci proyek.</p>
-                <div class="space-y-2">
-                    <div class="font-bold text-textLight text-xs font-heading">Hasil Karya & Fitur Utama:</div>
-                    <ul id="modal-highlights" class="list-disc list-inside space-y-1 text-slate-300">
-                        <!-- Dynamic Highlights -->
-                    </ul>
-                </div>
-            </div>
-            <div class="pt-4 flex flex-wrap items-center justify-between border-t border-[#262B38] gap-4">
-                <div id="modal-tools" class="flex flex-wrap gap-2 text-xs">
-                    <!-- Dynamic Tools -->
-                </div>
-                <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded bg-brandRed text-white hover:bg-red-700 font-bold text-xs flex items-center space-x-2 transition-colors">
-                    <span>Lihat di Behance</span>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- NAVIGATION HEADER WITH EXACT SVG LOGO -->
-    <nav class="sticky top-0 z-40 bg-[#0E1015]/95 backdrop-blur-md border-b border-[#262B38]">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                
-                <!-- BRAND LOGO SVG (Monogram + Custom Logotype) -->
-                <a href="#hero" class="flex items-center space-x-3 group">
-                    <svg class="h-9 w-auto" viewBox="0 0 520 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Monogram af -->
-                        <g fill="#E61C14">
-                            <!-- Monogram Top Arch & Loop 'af' -->
-                            <path d="M48 18 C26 18 10 32 10 56 C10 80 26 94 48 94 C64 94 76 86 84 74 L84 90 C84 104 72 112 54 112 C40 112 28 104 24 94 L10 100 C16 116 34 126 54 126 C82 126 100 108 100 86 L100 48 C100 36 90 28 78 28 L54 28 C34 28 24 38 24 56 C24 70 34 78 48 78 C60 78 72 70 72 56 C72 44 62 38 48 38 Z" />
-                            <path d="M42 6 C62 6 82 16 90 28 L76 36 C70 28 56 20 42 20 C28 20 18 26 18 36 C18 46 28 50 46 54 C70 58 86 66 86 86 C86 108 64 118 40 118 C18 118 4 106 0 88 L14 82 C18 94 28 102 40 102 C54 102 68 94 68 86 C68 76 56 72 40 68 C18 64 4 54 4 36 C4 18 20 6 42 6 Z" />
-                            
-                            <!-- Custom Wordmark 'alwanfaiq' -->
-                            <!-- a -->
-                            <path d="M125 45 C115 45 108 52 108 65 C108 78 115 85 125 85 C132 85 137 81 140 76 L140 84 L149 84 L149 46 L140 46 L140 54 C137 49 132 45 125 45 Z M128 54 C135 54 140 60 140 65 C140 70 135 76 128 76 C121 76 116 70 116 65 C116 60 121 54 128 54 Z"/>
-                            <!-- l -->
-                            <path d="M158 26 L167 26 L167 84 L158 84 Z"/>
-                            <!-- w -->
-                            <path d="M176 46 L185 84 L193 84 L200 55 L207 84 L215 84 L224 46 L214 46 L208 73 L201 46 L198 46 L191 73 L185 46 Z"/>
-                            <!-- a -->
-                            <path d="M239 45 C229 45 222 52 222 65 C222 78 229 85 239 85 C246 85 251 81 254 76 L254 84 L263 84 L263 46 L254 46 L254 54 C251 49 246 45 239 45 Z M242 54 C249 54 254 60 254 65 C254 70 249 76 242 76 C235 76 230 70 230 65 C230 60 235 54 242 54 Z"/>
-                            <!-- n -->
-                            <path d="M273 46 L273 84 L282 84 L282 58 C282 54 286 52 291 52 C296 52 300 54 300 60 L300 84 L309 84 L309 58 C309 49 301 45 291 45 C284 45 278 48 275 53 L275 46 Z"/>
-                            
-                            <!-- faiq -->
-                            <!-- F -->
-                            <path d="M322 30 L344 30 L344 38 L331 38 L331 52 L342 52 L342 60 L331 60 L331 84 L322 84 Z"/>
-                            <!-- a -->
-                            <path d="M358 45 C348 45 341 52 341 65 C341 78 348 85 358 85 C365 85 370 81 373 76 L373 84 L382 84 L382 46 L373 46 L373 54 C370 49 365 45 358 45 Z M361 54 C368 54 373 60 373 65 C373 70 368 76 361 76 C354 76 349 70 349 65 C349 60 354 54 361 54 Z"/>
-                            <!-- i -->
-                            <path d="M392 46 L401 46 L401 84 L392 84 Z M392 30 L401 30 L401 38 L392 38 Z"/>
-                            <!-- q -->
-                            <path d="M416 45 C406 45 399 52 399 65 C399 78 406 85 416 85 C423 85 428 81 431 76 L431 100 L440 100 L440 46 L431 46 L431 54 C428 49 423 45 416 45 Z M419 54 C426 54 431 60 431 65 C431 70 426 76 419 76 C412 76 407 70 407 65 C407 60 412 54 419 54 Z"/>
-                        </g>
-                    </svg>
-                </a>
-
-                <!-- Desktop Navigation Links -->
-                <div class="hidden md:flex items-center space-x-8 text-xs font-semibold text-textMuted uppercase tracking-widest">
-                    <a href="#archive" class="hover:text-brandRed transition-colors">Portofolio</a>
-                    <a href="#brand-system" class="hover:text-brandRed transition-colors">Brand Spec</a>
-                    <a href="#cv" class="hover:text-brandRed transition-colors">Rekam Jejak CV</a>
-                    <a href="#contact" class="hover:text-brandRed transition-colors">Kontak</a>
-                </div>
-
-                <!-- Behance Callout -->
-                <div class="hidden md:flex items-center space-x-3">
-                    <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded bg-brandRed hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center space-x-2 shadow-lg shadow-red-900/30">
-                        <i class="fa-brands fa-behance text-sm"></i>
-                        <span>Archive 2023–2026</span>
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-toggle" class="md:hidden text-textMuted hover:text-white p-2">
-                    <i class="fa-solid fa-bars text-xl"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu Drawer -->
-        <div id="mobile-menu" class="hidden md:hidden border-b border-[#262B38] px-4 py-4 space-y-3 bg-[#0E1015] text-xs font-bold uppercase tracking-wider text-textMuted">
-            <a href="#archive" class="block hover:text-brandRed py-1">Portofolio Karya</a>
-            <a href="#brand-system" class="block hover:text-brandRed py-1">Identitas Brand</a>
-            <a href="#cv" class="block hover:text-brandRed py-1">Curriculum Vitae</a>
-            <a href="#contact" class="block hover:text-brandRed py-1">Kontak</a>
-            <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" class="block text-brandYellow pt-2 border-t border-[#262B38]">
-                Buka Behance Gallery &rarr;
-            </a>
-        </div>
-    </nav>
-
-    <!-- MAIN BODY CONTAINER -->
-    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-24 space-y-24">
-
-        <!-- HERO SECTION -->
-        <section id="hero" class="space-y-8 pt-4">
-            
-            <div class="flex flex-wrap items-center gap-3">
-                <span class="px-3 py-1 rounded bg-brandRed/10 border border-brandRed/40 brand-tag text-brandRed flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-brandRed animate-pulse"></span>
-                    OFFICIAL PERSONAL IDENTITY SYSTEM
-                </span>
-                <span class="brand-tag text-brandYellow">BEHANCE ARCHIVE 2023 — 2026</span>
-            </div>
-
-            <!-- Vector SVG Hero Logo -->
-            <div class="space-y-3">
-                <div class="max-w-2xl py-2">
-                    <svg viewBox="0 0 520 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
-                        <g fill="#E61C14">
-                            <!-- Monogram af -->
-                            <path d="M48 18 C26 18 10 32 10 56 C10 80 26 94 48 94 C64 94 76 86 84 74 L84 90 C84 104 72 112 54 112 C40 112 28 104 24 94 L10 100 C16 116 34 126 54 126 C82 126 100 108 100 86 L100 48 C100 36 90 28 78 28 L54 28 C34 28 24 38 24 56 C24 70 34 78 48 78 C60 78 72 70 72 56 C72 44 62 38 48 38 Z" />
-                            <path d="M42 6 C62 6 82 16 90 28 L76 36 C70 28 56 20 42 20 C28 20 18 26 18 36 C18 46 28 50 46 54 C70 58 86 66 86 86 C86 108 64 118 40 118 C18 118 4 106 0 88 L14 82 C18 94 28 102 40 102 C54 102 68 94 68 86 C68 76 56 72 40 68 C18 64 4 54 4 36 C4 18 20 6 42 6 Z" />
-                            
-                            <!-- Custom Wordmark 'alwanfaiq' -->
-                            <path d="M125 45 C115 45 108 52 108 65 C108 78 115 85 125 85 C132 85 137 81 140 76 L140 84 L149 84 L149 46 L140 46 L140 54 C137 49 132 45 125 45 Z M128 54 C135 54 140 60 140 65 C140 70 135 76 128 76 C121 76 116 70 116 65 C116 60 121 54 128 54 Z"/>
-                            <path d="M158 26 L167 26 L167 84 L158 84 Z"/>
-                            <path d="M176 46 L185 84 L193 84 L200 55 L207 84 L215 84 L224 46 L214 46 L208 73 L201 46 L198 46 L191 73 L185 46 Z"/>
-                            <path d="M239 45 C229 45 222 52 222 65 C222 78 229 85 239 85 C246 85 251 81 254 76 L254 84 L263 84 L263 46 L254 46 L254 54 C251 49 246 45 239 45 Z M242 54 C249 54 254 60 254 65 C254 70 249 76 242 76 C235 76 230 70 230 65 C230 60 235 54 242 54 Z"/>
-                            <path d="M273 46 L273 84 L282 84 L282 58 C282 54 286 52 291 52 C296 52 300 54 300 60 L300 84 L309 84 L309 58 C309 49 301 45 291 45 C284 45 278 48 275 53 L275 46 Z"/>
-                            <path d="M322 30 L344 30 L344 38 L331 38 L331 52 L342 52 L342 60 L331 60 L331 84 L322 84 Z"/>
-                            <path d="M358 45 C348 45 341 52 341 65 C341 78 348 85 358 85 C365 85 370 81 373 76 L373 84 L382 84 L382 46 L373 46 L373 54 C370 49 365 45 358 45 Z M361 54 C368 54 373 60 373 65 C373 70 368 76 361 76 C354 76 349 70 349 65 C349 60 354 54 361 54 Z"/>
-                            <path d="M392 46 L401 46 L401 84 L392 84 Z M392 30 L401 30 L401 38 L392 38 Z"/>
-                            <path d="M416 45 C406 45 399 52 399 65 C399 78 406 85 416 85 C423 85 428 81 431 76 L431 100 L440 100 L440 46 L431 46 L431 54 C428 49 423 45 416 45 Z M419 54 C426 54 431 60 431 65 C431 70 426 76 419 76 C412 76 407 70 407 65 C407 60 412 54 419 54 Z"/>
-                        </g>
-                    </svg>
-                </div>
-                <h1 class="text-xl sm:text-3xl font-extrabold text-brandYellow font-heading tracking-tight">
-                    Motion Designer & Visual Branding Specialist
-                </h1>
-            </div>
-
-            <p class="text-base sm:text-lg text-textMuted max-w-3xl leading-relaxed font-normal">
-                Spesialis dalam merancang paket siaran animasi broadcast motion graphics (YouTube Live & Event), sistem identitas visual brand, ilustrasi streetwear, serta antarmuka perangkat lunak web modern.
-            </p>
-
-            <!-- Quick Capabilities Grid -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl pt-2">
-                <div class="brand-card p-4 rounded">
-                    <div class="brand-tag text-brandYellow">SPESIALISASI 01</div>
-                    <div class="text-sm font-bold text-textLight mt-1 font-heading">Broadcast Motion</div>
-                    <div class="text-[11px] text-textMuted mt-0.5">Bumper, Lower Thirds, OBS Live</div>
-                </div>
-                <div class="brand-card p-4 rounded">
-                    <div class="brand-tag text-brandYellow">SPESIALISASI 02</div>
-                    <div class="text-sm font-bold text-textLight mt-1 font-heading">Brand Identity</div>
-                    <div class="text-[11px] text-textMuted mt-0.5">Guidelines & Logo Geometry</div>
-                </div>
-                <div class="brand-card p-4 rounded">
-                    <div class="brand-tag text-brandYellow">SPESIALISASI 03</div>
-                    <div class="text-sm font-bold text-textLight mt-1 font-heading">Apparel Graphics</div>
-                    <div class="text-[11px] text-textMuted mt-0.5">Streetwear & Print Layout</div>
-                </div>
-                <div class="brand-card p-4 rounded">
-                    <div class="brand-tag text-brandYellow">SPESIALISASI 04</div>
-                    <div class="text-sm font-bold text-textLight mt-1 font-heading">Digital Product</div>
-                    <div class="text-[11px] text-textMuted mt-0.5">Tauri Desktop & Web Apps</div>
-                </div>
-            </div>
-
-            <div id="hero-cta" class="flex flex-wrap items-center gap-4 pt-4">
-                <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded bg-brandRed hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center space-x-2 shadow-lg shadow-red-900/30">
-                    <i class="fa-brands fa-behance text-base"></i>
-                    <span>Archive Works 2023–2026</span>
-                </a>
-
-                <a href="https://www.behance.net/gallery/170032623/Personal-Identity" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded brand-card text-textLight hover:border-brandYellow font-bold text-xs uppercase tracking-wider transition-colors flex items-center space-x-2">
-                    <i class="fa-solid fa-swatchbook text-brandYellow"></i>
-                    <span>Personal Identity Spec</span>
-                </a>
-
-                <button onclick="copyEmail()" class="px-4 py-3.5 rounded brand-card text-textMuted hover:text-white transition-colors flex items-center space-x-2 text-xs font-bold" title="Salin Email">
-                    <i class="fa-regular fa-copy text-brandYellow"></i>
-                    <span>Salin Email</span>
-                </button>
-            </div>
-
-        </section>
-
-        <div class="brand-divider"></div>
-
-        <!-- ARCHIVED WORKS & BRAND SPEC CARDS -->
-        <section id="archive" class="space-y-8">
-            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
-                <div>
-                    <span class="brand-tag text-brandYellow mb-1 block">01 / OFFICIAL BEHANCE EXHIBITIONS</span>
-                    <h2 class="text-3xl font-extrabold font-heading text-textLight">Koleksi Portofolio Utam</h2>
-                </div>
-                <span class="text-xs text-textMuted font-mono">Dipublikasikan di Behance</span>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
-                <!-- Archive Card 1: Archived Works -->
-                <div class="brand-card rounded-lg p-6 sm:p-8 space-y-6 relative overflow-hidden group border-l-4 border-l-brandRed">
-                    <div class="space-y-2">
-                        <div class="flex items-center justify-between">
-                            <span class="brand-tag text-brandRed font-bold">EXHIBITION ARCHIVE</span>
-                            <i class="fa-brands fa-behance text-2xl text-textMuted group-hover:text-brandRed transition-colors"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold font-heading text-textLight group-hover:text-brandYellow transition-colors">
-                            Portfolio Archived Works (2023–2026)
-                        </h3>
-                    </div>
-
-                    <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
-                        Arsip komprehensif karya motion graphics broadcast live media, identitas visual brand streetwear, desain kemasan produk, dan antarmuka aplikasi web interaktif.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="px-2.5 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300">Broadcast Motion</span>
-                        <span class="px-2.5 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300">Streetwear Layout</span>
-                        <span class="px-2.5 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300">Live OBS Assets</span>
-                    </div>
-
-                    <div class="pt-4 border-t border-[#262B38] flex items-center justify-between">
-                        <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-brandRed hover:text-red-400 flex items-center space-x-2">
-                            <span>Buka Behance Gallery</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                        <span class="brand-tag text-[10px] text-textMuted">ID: 254504617</span>
-                    </div>
-                </div>
-
-                <!-- Archive Card 2: Personal Identity System -->
-                <div class="brand-card rounded-lg p-6 sm:p-8 space-y-6 relative overflow-hidden group border-l-4 border-l-brandYellow">
-                    <div class="space-y-2">
-                        <div class="flex items-center justify-between">
-                            <span class="brand-tag text-brandYellow font-bold">BRAND SYSTEM SPEC</span>
-                            <i class="fa-solid fa-palette text-2xl text-textMuted group-hover:text-brandYellow transition-colors"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold font-heading text-textLight group-hover:text-brandRed transition-colors">
-                            Personal Identity System (2026)
-                        </h3>
-                    </div>
-
-                    <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
-                        Spesifikasi sistem panduan brand resmi Alwan Faiq yang mengatur konstruksi monogram 'af', pilihan skema warna Vivid Red & Amber Yellow, serta aplikasi merchandise.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="px-2.5 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300">Monogram Grid</span>
-                        <span class="px-2.5 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300">Color System</span>
-                        <span class="px-2.5 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300">Merchandise Layout</span>
-                    </div>
-
-                    <div class="pt-4 border-t border-[#262B38] flex items-center justify-between">
-                        <a href="https://www.behance.net/gallery/170032623/Personal-Identity" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-brandYellow hover:text-yellow-300 flex items-center space-x-2">
-                            <span>Buka Dokumentasi Brand System</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                        <span class="brand-tag text-[10px] text-textMuted">ID: 170032623</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- BENTO SHOWCASE GRID -->
-        <section id="projects" class="space-y-8">
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
-                <div>
-                    <span class="brand-tag text-brandYellow mb-1 block">02 / WORK BENTO SHOWCASE</span>
-                    <h2 class="text-3xl font-extrabold font-heading text-textLight">Katalog Proyek Terpilih</h2>
-                </div>
-
-                <!-- Category Filter Buttons -->
-                <div id="project-filter" class="flex flex-wrap gap-2 text-xs font-bold">
-                    <button onclick="filterProjects('all')" id="filter-all" class="filter-btn active px-3.5 py-2 rounded bg-brandRed text-white transition-colors">
-                        Semua
-                    </button>
-                    <button onclick="filterProjects('motion')" id="filter-motion" class="filter-btn px-3.5 py-2 rounded brand-card text-textMuted hover:text-white transition-colors">
-                        Motion Graphics
-                    </button>
-                    <button onclick="filterProjects('branding')" id="filter-branding" class="filter-btn px-3.5 py-2 rounded brand-card text-textMuted hover:text-white transition-colors">
-                        Visual Identity
-                    </button>
-                    <button onclick="filterProjects('digital')" id="filter-digital" class="filter-btn px-3.5 py-2 rounded brand-card text-textMuted hover:text-white transition-colors">
-                        Web & Tech
-                    </button>
-                </div>
-            </div>
-
-            <!-- Bento Items Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <!-- Project 1: Dalwa TV -->
-                <div class="project-item brand-card rounded-lg p-6 space-y-4 md:col-span-2 cursor-pointer group" data-category="motion" onclick="openModal('dalwatv')">
-                    <div class="flex items-center justify-between border-b border-[#262B38] pb-3">
-                        <span class="brand-tag text-brandRed font-bold">BROADCAST MEDIA • MOTION GRAPHICS</span>
-                        <i class="fa-solid fa-circle-play text-brandYellow group-hover:scale-110 transition-transform"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-xl font-bold font-heading text-textLight group-hover:text-brandYellow transition-colors">
-                            Dalwa TV Creative Agency
-                        </h3>
-                        <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
-                            Pengembangan paket animasi siaran langsung (YouTube Live) standar siaran media broadcast. Termasuk bumper intro 60 FPS, lower third dinamis, stinger transition, dan visual backdrop panggung live.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="brand-tag text-[10px] text-slate-300">After Effects</span>
-                        <span class="brand-tag text-[10px] text-slate-300">OBS Live Broadcast</span>
-                        <span class="brand-tag text-[10px] text-slate-300">Stage Motion</span>
-                    </div>
-                    <div class="text-xs font-bold text-brandRed pt-2 flex items-center space-x-2">
-                        <span>Detail Proyek</span>
-                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                    </div>
-                </div>
-
-                <!-- Project 2: I'LLBEST! Apparel -->
-                <div class="project-item brand-card rounded-lg p-6 space-y-4 cursor-pointer group" data-category="branding" onclick="openModal('illbest')">
-                    <div class="flex items-center justify-between border-b border-[#262B38] pb-3">
-                        <span class="brand-tag text-brandYellow font-bold">STREETWEAR GRAPHICS</span>
-                        <i class="fa-solid fa-shirt text-brandRed group-hover:scale-110 transition-transform"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-xl font-bold font-heading text-textLight group-hover:text-brandRed transition-colors">
-                            I'LLBEST! Apparel Brand
-                        </h3>
-                        <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
-                            Identitas visual merek pakaian streetwear, tipografi sablon produk, ilustrasi Ligne Claire, dan kemasan eksklusif.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="brand-tag text-[10px] text-slate-300">Adobe Illustrator</span>
-                        <span class="brand-tag text-[10px] text-slate-300">Apparel Layout</span>
-                    </div>
-                    <div class="text-xs font-bold text-brandYellow pt-2 flex items-center space-x-2">
-                        <span>Detail Proyek</span>
-                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                    </div>
-                </div>
-
-                <!-- Project 3: SAQI Beverage Co. -->
-                <div class="project-item brand-card rounded-lg p-6 space-y-4 cursor-pointer group" data-category="digital" onclick="openModal('saqi')">
-                    <div class="flex items-center justify-between border-b border-[#262B38] pb-3">
-                        <span class="brand-tag text-brandYellow font-bold">BRANDING & WEB POS APP</span>
-                        <i class="fa-solid fa-mug-hot text-brandYellow group-hover:scale-110 transition-transform"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-xl font-bold font-heading text-textLight group-hover:text-brandYellow transition-colors">
-                            SAQI Beverage Co.
-                        </h3>
-                        <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
-                            Perancangan kemasan produk kopi/latte botol dipadukan dengan pembuatan sistem Kasir POS web kustom.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="brand-tag text-[10px] text-slate-300">Packaging Design</span>
-                        <span class="brand-tag text-[10px] text-slate-300">Web POS App</span>
-                    </div>
-                    <div class="text-xs font-bold text-brandRed pt-2 flex items-center space-x-2">
-                        <span>Detail Proyek</span>
-                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                    </div>
-                </div>
-
-                <!-- Project 4: Alfa History -->
-                <div class="project-item brand-card rounded-lg p-6 space-y-4 cursor-pointer group" data-category="motion" onclick="openModal('alfahistory')">
-                    <div class="flex items-center justify-between border-b border-[#262B38] pb-3">
-                        <span class="brand-tag text-brandRed font-bold">DOCUMENTARY MOTION</span>
-                        <i class="fa-solid fa-film text-brandRed group-hover:scale-110 transition-transform"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-xl font-bold font-heading text-textLight group-hover:text-brandYellow transition-colors">
-                            Alfa History Media
-                        </h3>
-                        <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
-                            Visual branding dan motion graphics untuk konten media dokumenter sejarah, grafik infografik dinamis, serta layout presentasi.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="brand-tag text-[10px] text-slate-300">Documentary Motion</span>
-                        <span class="brand-tag text-[10px] text-slate-300">Infographic Visual</span>
-                    </div>
-                    <div class="text-xs font-bold text-brandRed pt-2 flex items-center space-x-2">
-                        <span>Detail Proyek</span>
-                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                    </div>
-                </div>
-
-                <!-- Project 5: NOMAD Desktop Utility -->
-                <div class="project-item brand-card rounded-lg p-6 space-y-4 cursor-pointer group" data-category="digital" onclick="openModal('nomad')">
-                    <div class="flex items-center justify-between border-b border-[#262B38] pb-3">
-                        <span class="brand-tag text-brandYellow font-bold">TAURI DESKTOP UTILITY</span>
-                        <i class="fa-solid fa-laptop-code text-brandYellow group-hover:scale-110 transition-transform"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-xl font-bold font-heading text-textLight group-hover:text-brandRed transition-colors">
-                            NOMAD Desktop Utility
-                        </h3>
-                        <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
-                            Aplikasi desktop overlay notch interaktif yang dibangun menggunakan Tauri (Rust) & Next.js dengan visualizer audio real-time.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="brand-tag text-[10px] text-slate-300">Tauri (Rust)</span>
-                        <span class="brand-tag text-[10px] text-slate-300">Next.js UI</span>
-                        <span class="brand-tag text-[10px] text-slate-300">Web Audio API</span>
-                    </div>
-                    <div class="text-xs font-bold text-brandYellow pt-2 flex items-center space-x-2">
-                        <span>Detail Proyek</span>
-                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                    </div>
-                </div>
-
-                <!-- Project 6: ZON Grill -->
-                <div class="project-item brand-card rounded-lg p-6 space-y-4 cursor-pointer group md:col-span-3" data-category="branding" onclick="openModal('zongrill')">
-                    <div class="flex items-center justify-between border-b border-[#262B38] pb-3">
-                        <span class="brand-tag text-brandYellow font-bold">CULINARY BRANDING & STRATEGY</span>
-                        <i class="fa-solid fa-fire text-brandRed group-hover:scale-110 transition-transform"></i>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div class="space-y-2 md:col-span-2">
-                            <h3 class="text-xl font-bold font-heading text-textLight group-hover:text-brandYellow transition-colors">
-                                ZON Grill & Home Service
-                            </h3>
-                            <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
-                                Konsep identitas visual komprehensif untuk usaha kuliner BBQ & Grill. Mencakup perancangan maskot, tata letak sistem menu restoran, kemasan food-grade, serta strategi promosi banner digital.
-                            </p>
-                        </div>
-                        <div class="flex flex-col justify-between space-y-3">
-                            <div class="flex flex-wrap gap-2">
-                                <span class="brand-tag text-[10px] text-slate-300">Culinary Identity</span>
-                                <span class="brand-tag text-[10px] text-slate-300">Menu Layout</span>
-                                <span class="brand-tag text-[10px] text-slate-300">Packaging</span>
-                            </div>
-                            <div class="text-xs font-bold text-brandRed flex items-center space-x-2">
-                                <span>Detail Proyek</span>
-                                <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <div class="brand-divider"></div>
-
-        <!-- BRAND GUIDELINES SPECIFICATION -->
-        <section id="brand-system" class="space-y-8">
-            <div>
-                <span class="brand-tag text-brandYellow mb-1 block">03 / BRAND SYSTEM SPECIFICATION</span>
-                <h2 class="text-3xl font-extrabold font-heading text-textLight">Pedoman Identitas Brand</h2>
-            </div>
-
-            <div class="brand-card rounded-lg p-6 sm:p-8 space-y-8 border-t-4 border-t-brandRed">
-                
-                <!-- Swatches -->
-                <div class="space-y-4">
-                    <h3 class="text-lg font-bold font-heading text-textLight">1. Skema Warna Resmi</h3>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                        <div class="space-y-2">
-                            <div class="h-20 rounded bg-[#E61C14] border border-white/10 flex items-end p-2 text-white font-mono text-xs font-bold">
-                                #E61C14
-                            </div>
-                            <div class="text-xs font-bold text-textLight">Primary Vivid Red</div>
-                            <div class="text-[10px] text-textMuted">Aksen utama & logo monogram</div>
-                        </div>
-                        <div class="space-y-2">
-                            <div class="h-20 rounded bg-[#FFC000] border border-white/10 flex items-end p-2 text-black font-mono text-xs font-bold">
-                                #FFC000
-                            </div>
-                            <div class="text-xs font-bold text-textLight">Amber Yellow</div>
-                            <div class="text-[10px] text-textMuted">Warna sekunder & sorotan</div>
-                        </div>
-                        <div class="space-y-2">
-                            <div class="h-20 rounded bg-[#0E1015] border border-[#262B38] flex items-end p-2 text-white font-mono text-xs font-bold">
-                                #0E1015
-                            </div>
-                            <div class="text-xs font-bold text-textLight">Dark Slate</div>
-                            <div class="text-[10px] text-textMuted">Latar belakang utama aplikasi</div>
-                        </div>
-                        <div class="space-y-2">
-                            <div class="h-20 rounded bg-[#F4F5F7] border border-white/10 flex items-end p-2 text-black font-mono text-xs font-bold">
-                                #F4F5F7
-                            </div>
-                            <div class="text-xs font-bold text-textLight">Crisp Off-White</div>
-                            <div class="text-[10px] text-textMuted">Tipografi kontras tinggi</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Geometry & Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-[#262B38]">
-                    <div class="space-y-3">
-                        <h3 class="text-lg font-bold font-heading text-textLight">2. Konstruksi Vector Monogram</h3>
-                        <p class="text-xs text-textMuted leading-relaxed">
-                            Monogram 'af' dibentuk dari modul geometris fluida yang menyatu secara presisi. Memiliki rasio seimbang untuk aplikasi media cetak, apparel streetwear, maupun ikon digital resolution-independent.
-                        </p>
-                    </div>
-                    <div class="space-y-3">
-                        <h3 class="text-lg font-bold font-heading text-textLight">3. Hierarki Tipografi</h3>
-                        <p class="text-xs text-textMuted leading-relaxed">
-                            Proyek dan antarmuka ini mengkombinasikan tipe huruf geometris kontemporer <strong class="text-textLight font-semibold">Space Grotesk</strong> untuk headline dan <strong class="text-textLight font-semibold">Inter</strong> untuk body text demi tingkat keterbacaan yang optimal.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="brand-divider"></div>
-
-        <!-- REKAM JEJAK & CV TABBED -->
-        <section id="cv" class="space-y-8">
-            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-                <div>
-                    <span class="brand-tag text-brandYellow mb-1 block">04 / CURRICULUM VITAE</span>
-                    <h2 class="text-3xl font-extrabold font-heading text-textLight">Rekam Jejak & Pengalaman</h2>
-                </div>
-
-                <button onclick="window.print()" class="print-hidden px-4 py-2.5 rounded bg-brandRed hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center space-x-2">
-                    <i class="fa-solid fa-print"></i>
-                    <span>Cetak PDF</span>
-                </button>
-            </div>
-
-            <!-- CV Navigation Tabs -->
-            <div class="cv-tab-nav flex border-b border-[#262B38] text-xs font-bold tracking-wider uppercase">
-                <button onclick="switchTab('exp')" id="btn-exp" class="py-3 px-6 border-b-2 border-brandRed text-brandRed transition-colors">
-                    Pengalaman Kerja
-                </button>
-                <button onclick="switchTab('skills')" id="btn-skills" class="py-3 px-6 border-b-2 border-transparent text-textMuted hover:text-white transition-colors">
-                    Keahlian & Tools
-                </button>
-                <button onclick="switchTab('edu')" id="btn-edu" class="py-3 px-6 border-b-2 border-transparent text-textMuted hover:text-white transition-colors">
-                    Pendidikan & Project
-                </button>
-            </div>
-
-            <!-- CV Tab Panels -->
-            <div class="brand-card rounded-lg p-6 sm:p-8 space-y-8">
-                
-                <!-- TAB 1: Pengalaman Kerja -->
-                <div id="tab-exp" class="cv-panel space-y-8">
-                    
-                    <div class="space-y-2 border-b border-[#262B38] pb-6 last:border-0 last:pb-0">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between text-sm">
-                            <h3 class="font-bold text-textLight text-base font-heading">Lead Motion Graphics Artist & Creative Director</h3>
-                            <span class="brand-tag text-brandRed font-bold">2022 — SEKARANG</span>
-                        </div>
-                        <div class="text-xs text-brandYellow font-semibold">Dalwa TV Creative Agency</div>
-                        <ul class="list-disc list-inside text-xs text-textMuted space-y-1.5 pt-2 leading-relaxed">
-                            <li>Memproduksi seluruh paket animasi motion graphics siaran langsung (YouTube Live) berstandar siaran TV.</li>
-                            <li>Mengembangkan bumper intro 60 FPS, lower third dinamis, stinger transition, dan visual backdrop panggung event.</li>
-                            <li>Mengarahkan arahan visual siaran langsung dan konsistensi brand siaran secara teknis dan estetis.</li>
-                        </ul>
-                    </div>
-
-                    <div class="space-y-2 border-b border-[#262B38] pb-6 last:border-0 last:pb-0">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between text-sm">
-                            <h3 class="font-bold text-textLight text-base font-heading">Founder & Lead Apparel Graphic Designer</h3>
-                            <span class="brand-tag text-brandYellow font-bold">2021 — SEKARANG</span>
-                        </div>
-                        <div class="text-xs text-brandYellow font-semibold">I'LLBEST! Apparel Brand</div>
-                        <ul class="list-disc list-inside text-xs text-textMuted space-y-1.5 pt-2 leading-relaxed">
-                            <li>Merancang konsep identitas visual merek pakaian streetwear dan karya grafik ilustrasi produk.</li>
-                            <li>Membuat tipografi sablon produk, packaging eksklusif, dan strategi promosi media digital.</li>
-                        </ul>
-                    </div>
-
-                    <div class="space-y-2">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between text-sm">
-                            <h3 class="font-bold text-textLight text-base font-heading">Visual Brand & Software Developer</h3>
-                            <span class="brand-tag text-textMuted font-bold">2023 — 2024</span>
-                        </div>
-                        <div class="text-xs text-brandYellow font-semibold">SAQI Beverage Co. & NOMAD Utility App</div>
-                        <ul class="list-disc list-inside text-xs text-textMuted space-y-1.5 pt-2 leading-relaxed">
-                            <li>Mendesain sistem visual kemasan latte serta aplikasi Kasir POS web kustom.</li>
-                            <li>Membangun aplikasi desktop overlay notch dengan Tauri (Rust) & Next.js dengan visualizer audio real-time.</li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <!-- TAB 2: Keahlian & Tools -->
-                <div id="tab-skills" class="cv-panel hidden space-y-6">
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                        <div class="space-y-3">
-                            <h4 class="font-bold text-textLight text-sm font-heading border-b border-[#262B38] pb-2 text-brandRed">Motion & Broadcast</h4>
-                            <div class="text-xs text-slate-300 space-y-1.5 font-mono">
-                                <div>• Adobe After Effects (60FPS)</div>
-                                <div>• Adobe Premiere Pro</div>
-                                <div>• OBS Broadcast Studio</div>
-                                <div>• Stage Visualizer Motion</div>
-                            </div>
-                        </div>
-
-                        <div class="space-y-3">
-                            <h4 class="font-bold text-textLight text-sm font-heading border-b border-[#262B38] pb-2 text-brandYellow">Branding & Layout</h4>
-                            <div class="text-xs text-slate-300 space-y-1.5 font-mono">
-                                <div>• Adobe Illustrator</div>
-                                <div>• Adobe Photoshop</div>
-                                <div>• Streetwear Design System</div>
-                                <div>• Packaging Layout</div>
-                            </div>
-                        </div>
-
-                        <div class="space-y-3">
-                            <h4 class="font-bold text-textLight text-sm font-heading border-b border-[#262B38] pb-2 text-brandRed">Web & Tech Stack</h4>
-                            <div class="text-xs text-slate-300 space-y-1.5 font-mono">
-                                <div>• HTML5 / CSS3 / JavaScript</div>
-                                <div>• Tailwind CSS & React</div>
-                                <div>• Tauri Framework (Rust)</div>
-                                <div>• Web Audio API Visualizer</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- TAB 3: Pendidikan & Project -->
-                <div id="tab-edu" class="cv-panel hidden space-y-6">
-                    <div class="space-y-4">
-                        <div class="border-b border-[#262B38] pb-4">
-                            <span class="brand-tag text-brandRed">Pendidikan Akademik</span>
-                            <h3 class="font-bold text-textLight text-base font-heading mt-1">Kandidat Sarjana Desain Komunikasi Visual</h3>
-                            <p class="text-xs text-textMuted mt-1">Fokus pada Broadcast Motion Graphics, Identitas Visual Brand, dan Perancangan Antarmuka Digital.</p>
-                        </div>
-
-                        <div>
-                            <span class="brand-tag text-brandYellow">Tautan Portofolio Resmi</span>
-                            <h3 class="font-bold text-textLight text-base font-heading mt-1">Alwan Faiq Portfolio Exhibitions</h3>
-                            <div class="space-y-2 pt-2 font-mono text-xs">
-                                <div>
-                                    <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" class="text-brandRed hover:underline">
-                                        • Portfolio Archived Works (2023–2026) &rarr;
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://www.behance.net/gallery/170032623/Personal-Identity" target="_blank" class="text-brandYellow hover:underline">
-                                        • Personal Identity System Guidelines (2026) &rarr;
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="pt-4">
-            <div class="brand-card rounded-lg p-8 sm:p-10 space-y-6 relative overflow-hidden border-t-4 border-t-brandRed">
-                <div class="space-y-2">
-                    <span class="brand-tag text-brandYellow">HUBUNGI ALWAN FAIQ</span>
-                    <h2 class="text-3xl font-extrabold font-heading text-textLight">Mari Berkolaborasi</h2>
-                    <p class="text-xs sm:text-sm text-textMuted max-w-xl leading-relaxed">
-                        Tersedia untuk pengerjaan proyek broadcast motion graphics, pengembangan identitas visual brand, serta perancangan aplikasi web interaktif.
-                    </p>
-                </div>
-
-                <div class="flex flex-wrap items-center gap-4 pt-2">
-                    <button onclick="copyEmail()" class="px-6 py-3.5 rounded bg-brandRed hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center space-x-2">
-                        <i class="fa-regular fa-envelope text-base"></i>
-                        <span>alwanfaiq.studio@gmail.com</span>
-                    </button>
-
-                    <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded brand-card text-textLight hover:border-brandYellow font-bold text-xs uppercase tracking-wider transition-colors flex items-center space-x-2">
-                        <i class="fa-brands fa-behance text-brandYellow"></i>
-                        <span>Behance Gallery</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="border-t border-[#262B38] py-8 text-xs text-textMuted">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center space-x-3">
-                <span class="font-heading font-extrabold text-textLight">ALWAN <span class="text-brandRed">FAIQ</span></span>
-                <span>© <span id="year"></span>. Official Personal Identity.</span>
-            </div>
-            <div class="flex items-center space-x-6 font-semibold uppercase brand-tag text-[10px]">
-                <a href="https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026" target="_blank" class="hover:text-brandRed transition-colors">Behance Archive</a>
-                <a href="https://www.behance.net/gallery/170032623/Personal-Identity" target="_blank" class="hover:text-brandYellow transition-colors">Brand Spec</a>
-                <a href="#hero" class="hover:text-white transition-colors">Ke Atas ↑</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JAVASCRIPT LOGIC -->
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        const mobileToggle = document.getElementById('mobile-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        function copyEmail() {
-            const email = 'alwanfaiq.studio@gmail.com';
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(email).then(showToast);
-            } else {
-                const ta = document.createElement('textarea');
-                ta.value = email;
-                document.body.appendChild(ta);
-                ta.select();
-                document.execCommand('copy');
-                document.body.removeChild(ta);
-                showToast();
-            }
-        }
-
-        function showToast() {
-            const toast = document.getElementById('toast');
-            toast.classList.remove('translate-y-20', 'opacity-0');
-            toast.classList.add('translate-y-0', 'opacity-100');
-            setTimeout(() => {
-                toast.classList.add('translate-y-20', 'opacity-0');
-                toast.classList.remove('translate-y-0', 'opacity-100');
-            }, 3000);
-        }
-
-        function switchTab(tabKey) {
-            document.querySelectorAll('.cv-panel').forEach(panel => {
-                panel.classList.add('hidden');
-            });
-            document.getElementById(`tab-${tabKey}`).classList.remove('hidden');
-
-            document.querySelectorAll('.cv-tab-nav button').forEach(btn => {
-                btn.classList.remove('border-brandRed', 'text-brandRed');
-                btn.classList.add('border-transparent', 'text-textMuted');
-            });
-
-            const activeBtn = document.getElementById(`btn-${tabKey}`);
-            activeBtn.classList.remove('border-transparent', 'text-textMuted');
-            activeBtn.classList.add('border-brandRed', 'text-brandRed');
-        }
-
-        function filterProjects(category) {
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.classList.remove('bg-brandRed', 'text-white');
-                btn.classList.add('brand-card', 'text-textMuted');
-            });
-
-            const activeFilterBtn = document.getElementById(`filter-${category}`);
-            activeFilterBtn.classList.remove('brand-card', 'text-textMuted');
-            activeFilterBtn.classList.add('bg-brandRed', 'text-white');
-
-            const items = document.querySelectorAll('.project-item');
-            items.forEach(item => {
-                if (category === 'all' || item.getAttribute('data-category') === category) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-
-        const projectData = {
-            dalwatv: {
-                title: 'Dalwa TV Creative Agency',
-                category: 'BROADCAST MEDIA • MOTION GRAPHICS',
-                role: 'Lead Motion Designer & Broadcast Specialist',
-                description: 'Pengembangan paket animasi siaran langsung (YouTube Live) berstandar siaran televisi. Proyek ini mencakup identitas gerak on-air lengkap untuk mendukung siaran langsung media.',
-                highlights: [
-                    'Bumper Intro & Outro 60 FPS dengan pergerakan kinetik yang mulus',
-                    'Lower Thirds dinamis yang dapat disesuaikan untuk nama narasumber & judul program',
-                    'Stinger Transition berdurasi presisi untuk perpindahan kamera live',
-                    'Visual Backdrop panggung untuk event besar dan pertunjukan langsung'
-                ],
-                tools: ['After Effects', 'Premiere Pro', 'OBS Studio', 'Photoshop'],
-                link: 'https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026'
-            },
-            illbest: {
-                title: "I'LLBEST! Apparel Brand",
-                category: 'STREETWEAR GRAPHICS & BRANDING',
-                role: 'Founder & Apparel Graphic Designer',
-                description: 'Perancangan identitas merek pakaian streetwear dari konsep awal hingga siap cetak. Berfokus pada eksperimen tipografi dan ilustrasi gaya Ligne Claire.',
-                highlights: [
-                    'Koleksi ilustrasi sablon t-shirt dan hoodie berskala presisi',
-                    'Desain packaging eksklusif, hangtag kustom, dan stiker promosi',
-                    'Strategi visual feed Instagram dan materi kampanye produk digital'
-                ],
-                tools: ['Adobe Illustrator', 'Adobe Photoshop', 'Screenprint Prep'],
-                link: 'https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026'
-            },
-            saqi: {
-                title: 'SAQI Beverage Co.',
-                category: 'BRANDING & WEB POS SOFTWARE',
-                role: 'Brand Designer & Front-End Developer',
-                description: 'Integrasi desain visual fisik dan perangkat lunak digital untuk brand minuman kopi/latte botol.',
-                highlights: [
-                    'Desain label botol beverage dengan hierarki informasi yang bersih',
-                    'Pengembangan aplikasi kasir POS berbasis web yang terintegrasi untuk manajemen transaksi kasir',
-                    'Palette warna produk yang ramah pelanggan dan adaptif'
-                ],
-                tools: ['Illustrator', 'HTML/Tailwind', 'JavaScript POS System'],
-                link: 'https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026'
-            },
-            alfahistory: {
-                title: 'Alfa History Media',
-                category: 'DOCUMENTARY MOTION GRAPHICS',
-                role: 'Creative Visual Designer',
-                description: 'Identitas visual dan motion graphics untuk media dokumenter sejarah. Menghadirkan narasi sejarah melalui grafik dinamis.',
-                highlights: [
-                    'Animasi infografik peta dan timeline sejarah',
-                    'Lower thirds dan judul episode bergaya arsip klasik',
-                    'Desain sampul thumbnail YouTube dan aset media sosial'
-                ],
-                tools: ['After Effects', 'Illustrator', 'Photoshop'],
-                link: 'https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026'
-            },
-            nomad: {
-                title: 'NOMAD Desktop Utility',
-                category: 'DESKTOP UTILITY & TAURI UI',
-                role: 'UI/UX Designer & Desktop Developer',
-                description: 'Aplikasi utilitas overlay notch desktop modern yang efisien dan interaktif untuk sistem operasi desktop.',
-                highlights: [
-                    'Antarmuka overlay notch yang dapat memuat widget audio visualizer real-time',
-                    'Dibangun menggunakan framework Tauri (Rust) untuk performa memori ultra-ringan',
-                    'Visualisasi Web Audio API dengan animasi spektrum responsif'
-                ],
-                tools: ['Tauri (Rust)', 'Next.js', 'Tailwind CSS', 'Web Audio API'],
-                link: 'https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026'
-            },
-            zongrill: {
-                title: 'ZON Grill & Home Service',
-                category: 'CULINARY BRANDING & STRATEGY',
-                role: 'Visual Brand Specialist',
-                description: 'Sistem identitas brand lengkap untuk restoran BBQ & Grill modern dengan karakter kasual dan berenergi.',
-                highlights: [
-                    'Desain maskot karakter dan sistem logo serbaguna',
-                    'Layout buku menu fisik dan digital berketerbacaan tinggi',
-                    'Packaging food-grade dan materi spanduk promosi out-of-home'
-                ],
-                tools: ['Illustrator', 'Photoshop', 'Brand Strategy'],
-                link: 'https://www.behance.net/gallery/254504617/Portfolio_Archived-Works-20232026'
-            }
-        };
-
-        function openModal(key) {
-            const data = projectData[key];
-            if (!data) return;
-
-            document.getElementById('modal-category').textContent = data.category;
-            document.getElementById('modal-title').textContent = data.title;
-            document.getElementById('modal-role').textContent = data.role;
-            document.getElementById('modal-description').textContent = data.description;
-            document.getElementById('modal-link').href = data.link;
-
-            const highlightsList = document.getElementById('modal-highlights');
-            highlightsList.innerHTML = '';
-            data.highlights.forEach(h => {
-                const li = document.createElement('li');
-                li.textContent = h;
-                highlightsList.appendChild(li);
-            });
-
-            const toolsContainer = document.getElementById('modal-tools');
-            toolsContainer.innerHTML = '';
-            data.tools.forEach(t => {
-                const span = document.createElement('span');
-                span.className = 'px-2 py-1 rounded bg-[#0E1015] border border-[#262B38] brand-tag text-slate-300';
-                span.textContent = t;
-                toolsContainer.appendChild(span);
-            });
-
-            document.getElementById('project-modal').classList.remove('hidden');
-        }
-
-        function closeModal() {
-            document.getElementById('project-modal').classList.add('hidden');
-        }
-    </script>
+<body>
+<nav><div class="wrap">
+<a href="#top" aria-label="Alwan Faiq"><svg viewBox="0 0 110.55559 21.130358" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img"><title>Alwan Faiq</title><g transform="translate(-8.4023174,-181.51918)"><path d="M 105.27651 188.99314 L 105.27651 189.30527 C 105.27651 189.82309 105.69668 190.24273 106.21443 190.24268 L 106.52656 190.24268 L 106.52656 189.93055 C 106.52656 189.41277 106.10691 188.99314 105.58915 188.99314 L 105.27651 188.99314 z M 105.27702 191.28448 L 105.27702 199.21887 C 105.27702 199.73661 105.69682 200.15629 106.21443 200.15629 L 106.52656 200.15629 L 106.52656 191.28448 L 105.27702 191.28448 z "/><path d="m 43.230293,188.99292 2.991233,11.16346 h 1.853781 c 0.442126,0 0.850654,-0.23584 1.071787,-0.61871 l 1.525441,-2.64237 1.525722,2.64237 c 0.220993,0.38287 0.62952,0.61871 1.071506,0.61871 H 55.1236 l 2.991416,-11.16346 h -1.853978 c -0.42132,0 -0.790204,0.28305 -0.899294,0.69011 l -1.898261,7.08454 -2.433592,-4.21505 c -0.158856,-0.27502 -0.555715,-0.27502 -0.714572,0 l -2.433591,4.21506 -1.898247,-7.08456 c -0.109091,-0.40705 -0.477932,-0.6901 -0.899337,-0.6901 z"/><path d="m 39.499591,185.25608 v 13.97557 c 0,0.51387 0.416569,0.93042 0.930433,0.93042 h 1.550675 v -14.90599 z"/><path d="m 32.651443,188.99289 c -2.935015,0 -5.340927,2.26535 -5.564732,5.14294 v 0.43882 c 0,3.08044 2.495378,5.57804 5.574952,5.58173 1.143595,-0.001 2.206456,-0.34808 3.09075,-0.94002 v 0.01 c 0,0.51379 0.416527,0.93029 0.930307,0.93029 h 1.550492 v -5.58176 -1.8606 -1.36193 -2.35925 h -3.721184 z m -0.0084,2.48073 v 0 0 h 0.0084 3.100661 v 3.10101 c 0,1.7093 -1.383187,3.09624 -3.092466,3.10092 l -0.0028,-0.008 -0.0042,0.008 h -0.0084 v 0 c -1.709279,-0.004 -3.092438,-1.39162 -3.092452,-3.10092 v 0 c 0,-1.70929 1.383159,-3.09623 3.092424,-3.10097 z"/><path d="m 98.44508,188.99292 c -2.935043,0 -5.3408,2.26535 -5.564745,5.14293 v 0.4388 c 0,3.08044 2.495447,5.57804 5.574867,5.58173 1.749388,-0.003 3.309828,-0.81104 4.331148,-2.07317 v 1.14294 c 0,0.51378 0.41654,0.93028 0.93036,0.93028 h 0.31027 v -5.58175 -1.8606 -3.72116 h -3.72131 z m 0.01406,1.24026 v 0 h 4.33283 v 1.11888 0 3.4963 c -0.14128,2.27007 -2.02717,4.06749 -4.33283,4.06749 -2.397744,0 -4.341412,-1.94371 -4.341412,-4.3414 0,-2.39769 1.943668,-4.34133 4.341412,-4.34133 z"/><path d="M 90.993142 188.99263 C 88.119957 188.99263 85.75411 191.16323 85.445677 193.95408 L 85.445677 193.95511 C 85.431617 194.01501 85.431434 194.07545 85.428624 194.13598 L 85.428624 194.57471 C 85.428624 194.65821 85.428797 194.74113 85.442576 194.82379 C 85.442576 194.85889 85.428624 194.89464 85.428624 194.93076 L 85.428624 200.15629 L 86.668858 200.15629 L 86.668858 196.43507 L 91.630829 196.43507 L 91.630829 195.19483 L 86.668858 195.19483 L 86.668858 194.31633 L 86.712266 193.95408 C 87.012406 191.85744 88.810762 190.24336 90.990041 190.23338 L 91.629795 190.23338 L 91.629795 188.99314 L 90.992625 188.99314 L 90.993142 188.99263 z "/><path d="m 82.911478,188.99292 v 3.72121 1.86062 5.58182 h -1.550323 c -0.513823,0 -0.930363,-0.41651 -0.930363,-0.9303 v -6.5079 0 -1.24462 h -3.100647 -0.01406 v 0 0 c -1.598683,0.004 -2.912128,1.21813 -3.075342,2.77375 v 0 9.3e-4 0.65179 4.31601 0.94015 h -2.480687 v -5.22554 c 0,-0.0361 0,-0.0718 0.01406,-0.10698 0,-0.0827 -0.01406,-0.16571 -0.01406,-0.24924 v -0.43882 c 0.223664,-2.8776 2.629562,-5.14299 5.564745,-5.14299 h 1.860445 z"/><path d="m 21.483278,181.51918 c -3.0947,1e-5 -5.603447,2.51372 -5.603447,5.61442 v 1.23353 h 3.73312 v -1.23353 c -1.4e-5,-1.03694 0.834304,-1.87754 1.869231,-1.87752 h 1.874966 c 2.059774,-3e-5 3.729563,-1.67314 3.729578,-3.7369 z m 5.280463,5.60284 a 0.3129019,0.3129019 0 0 0 -0.262885,0.14369 0.3129019,0.3129019 0 0 0 -0.0028,0.004 c -0.404408,0.63318 -0.998207,1.14381 -1.722732,1.44229 -0.449619,0.18469 -0.930883,0.27961 -1.416828,0.27935 l -0.0014,10e-4 h -1.271313 -2.476427 -3.733232 -0.54773 -1.313474 c -3.099705,3e-5 -5.6125846,2.51773 -5.6125846,5.62346 0.00984,3.09567 2.5229026,5.5971 5.6125846,5.58711 3.089738,0 5.594436,-2.50956 5.594436,-5.60529 v -1.24262 h -3.73267 v 1.24253 c 0,1.03192 -0.831267,1.86843 -1.861189,1.86839 -1.029894,-10e-6 -1.875684,-0.8365 -1.875698,-1.86839 1.4e-5,-1.03187 0.845804,-1.86762 1.875698,-1.86764 l 1.313599,-9.3e-4 h 0.551245 3.729591 1.873871 c 2.961669,-2.4e-4 5.40908,-2.30923 5.591989,-5.26646 a 0.3129019,0.3129019 0 0 0 6.05e-4,-0.007 0.3129019,0.3129019 0 0 0 1.26e-4,-0.001 0.3129019,0.3129019 0 0 0 7.31e-4,-0.019 0.3129019,0.3129019 0 0 0 -0.312974,-0.31286 z"/><path d="m 64.929664,188.99289 c -2.935043,0 -5.340941,2.26535 -5.564745,5.14294 v 0.43882 c 0,3.08044 2.495307,5.57804 5.575008,5.58173 1.143483,-0.001 2.206413,-0.34808 3.090666,-0.94002 v 0.01 c 0,0.51379 0.4164,0.93029 0.930362,0.93029 h 1.550324 v -5.58176 -1.8606 -1.36193 -2.35925 h -3.72117 z m -0.01406,2.48073 v 0 0 h 0.01406 3.100647 v 3.10101 c 0,1.7093 -1.383173,3.09624 -3.092493,3.10092 v -0.008 0.008 h -0.01406 v 0 c -1.709321,-0.004 -3.092494,-1.39162 -3.092494,-3.10092 v 0 c 0,-1.70929 1.383173,-3.09623 3.092494,-3.10097 z"/><path d="m 113.36687,188.99292 c -3.08518,0 -5.58653,2.49919 -5.59019,5.58347 0.0141,3.0827 2.506,5.57999 5.59019,5.57999 h 1.8634 2.47591 v 1.56144 c 0,0.51457 0.41724,0.93171 0.93191,0.93171 h 0.31982 v -6.21998 -1.86341 c 0,-0.10374 -0.004,-0.1781 -0.0141,-0.30895 -0.003,-0.17082 -0.0294,-0.37114 -0.0394,-0.42533 -0.34091,-2.59758 -2.46494,-4.63378 -5.1028,-4.83894 z m 1.5e-4,1.23374 c 2.30875,0 4.19717,1.79956 4.33916,4.07255 v 4.61488 c -0.0155,0 -3.32417,0.008 -4.33916,0.008 -2.40126,0 -4.34788,-1.94665 -4.34788,-4.34798 0,-2.40131 1.94662,-4.348 4.34788,-4.348 z"/></g></svg></a>
+<ul><li><a href="#work">Work</a></li><li><a href="#build">Build</a></li><li><a href="#experience">Experience</a></li><li><a href="#brand">Brand</a></li><li><a href="#contact">Contact</a></li></ul>
+<span style="display:flex;gap:10px"><a class="btn o nvcv" href="Alwan_Faiq_CV_2026.pdf" download style="color:var(--red);padding:10px 18px">⬇ CV</a><a class="btn y" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener">Behance ↗</a></span>
+</div></nav>
+
+<main class="wrap" id="top">
+<section style="padding-top:12px">
+<div class="hero">
+<div class="txt">
+<span class="tag">Hello I'm</span>
+<h1>ALWAN<br>FAIQ</h1>
+<div class="sub">Branding • Motion • Illustration</div>
+<p class="lead">Graphic Designer, Motion Designer and Illustrator with 8+ years of experience creating brand identities, event visuals and digital campaigns for organizations, communities and Islamic institutions — including the creative team at Dalwa TV. I also build websites and desktop apps.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn y" href="#work">View Portfolio</a><a class="btn w" href="Alwan_Faiq_CV_2026.pdf" download>⬇ Download CV</a><a class="btn o" href="#contact">Open for freelance &amp; remote</a></div>
+</div>
+<div class="ph"><img src="data:image/webp;base64,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" alt="Alwan Faiq" width="671" height="700"></div>
+</div>
+<div class="stats">
+<div class="stat"><b>100+</b><span>Design assets created</span></div>
+<div class="stat"><b>50+</b><span>Brand identity projects</span></div>
+<div class="stat"><b>120+</b><span>Event visual designs</span></div>
+<div class="stat"><b>2018</b><span>Designing professionally since</span></div>
+</div>
+<div class="tools"><b>Tools</b>
+<span class="tl"><i style="background:#9BE564;color:#0F1416">a</i>Affinity</span>
+<span class="tl"><i style="background:#1d2428;color:#fff">In</i>Inkscape</span>
+<span class="tl"><i style="background:#EA7600;color:#fff">B</i>Blender</span>
+<span class="tl"><i style="background:#00005B;color:#9999FF">Pr</i>Premiere</span>
+<span class="tl"><i style="background:#001E36;color:#31A8FF">Ps</i>Photoshop</span>
+<span class="tl"><i style="background:#330000;color:#FF9A00">Ai</i>Illustrator</span>
+<span class="tl"><i style="background:#00005B;color:#9999FF">Ae</i>After Effects</span>
+</div>
+</section>
+
+<section id="work">
+<div class="head"><div><span class="tag" style="color:var(--red)">Selected work</span><h2>Creative Projects</h2></div>
+<a class="btn y" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener">All on Behance ↗</a></div>
+<div class="grid">
+<a class="work big" href="https://www.behance.net/bywan" target="_blank" rel="noopener"><span class="tag">Broadcast • Motion</span><h3>Dalwa TV</h3><p>Graphic &amp; motion design for TV broadcast, social media and event visuals.</p><div class="yr"><span>2021 – 2025</span><span>↗</span></div></a>
+<a class="work" href="https://www.behance.net/bywan" target="_blank" rel="noopener"><span class="tag">Event Branding</span><h3>LSSB 2025 &amp; 2026</h3><div class="yr"><span>2025 – 2026</span><span>↗</span></div></a>
+<a class="work" href="https://www.behance.net/bywan" target="_blank" rel="noopener"><span class="tag">Brand Identity • Packaging</span><h3>ALTAIR Perfume</h3><div class="yr"><span>Creative project</span><span>↗</span></div></a>
+<a class="work" href="https://www.behance.net/bywan" target="_blank" rel="noopener"><span class="tag">Event Visual</span><h3>World Arabic Language Day 2026</h3><div class="yr"><span>2026</span><span>↗</span></div></a>
+<a class="work" href="https://www.behance.net/bywan" target="_blank" rel="noopener"><span class="tag">Creative project</span><h3>REPANA</h3><div class="yr"><span>Creative project</span><span>↗</span></div></a>
+<a class="work" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener"><span class="tag">Self-initiated</span><h3>I'LLBEST!</h3><div class="yr"><span>Clothing brand</span><span>↗</span></div></a>
+<a class="work" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener"><span class="tag">Self-initiated</span><h3>SAQI</h3><div class="yr"><span>Self-initiated</span><span>↗</span></div></a>
+<a class="work" href="https://www.behance.net/alwanfaiq/projects" target="_blank" rel="noopener"><span class="tag">Self-initiated</span><h3>Personal Identity</h3><p>The af mark, wordmark and brand system.</p><div class="yr"><span>2018 – Present</span><span>↗</span></div></a>
+</div>
+</section>
+
+<section id="build">
+<div class="head"><div><span class="tag" style="color:var(--red)">Beyond design</span><h2>Websites &amp; Apps</h2></div></div>
+<div class="bld">
+<div class="bc"><span class="tag">Desktop app</span><h3>NOMAD Desktop Utility</h3><p>An interactive notch-style overlay for the desktop with a real-time audio visualizer — designed and built end to end.</p><div class="chips"><span>Tauri (Rust)</span><span>Next.js</span><span>Web Audio API</span></div></div>
+<div class="bc"><span class="tag">Web app</span><h3>SAQI Web POS</h3><p>A custom web-based cashier system built alongside the SAQI packaging and brand design.</p><div class="chips"><span>HTML</span><span>Tailwind CSS</span><span>JavaScript</span></div></div>
+</div></section>
+
+<section id="experience">
+<div class="head"><div><span class="tag" style="color:var(--red)">Background</span><h2>Experience</h2></div></div>
+<div class="panel exp"><div class="tlx">
+<div class="it"><div><h3>Dalwa TV</h3><small>Graphic &amp; Motion Designer</small><span class="yr">2021 – 2025</span></div><ul><li>Branding</li><li>TV Broadcast Graphic</li><li>Motion Graphic</li><li>Social Media</li><li>Event Visual</li></ul></div>
+<div class="it"><div><h3>Freelance Designer</h3><span class="yr">2018 – Present</span></div><ul><li>Brand Identity</li><li>Logo Design</li><li>Illustration</li><li>Packaging</li><li>Event Branding</li></ul></div>
+<div class="it"><div><h3>Creative Project</h3><span class="yr">2022 – Present</span></div><ul><li>LSSB 2025 &amp; 2026</li><li>ALTAIR Perfume</li><li>World Arabic Language Day 2026</li><li>REPANA</li></ul></div>
+<div class="it"><div><h3>Self-Initiated Projects</h3><span class="yr">2018 – Present</span></div><ul><li>I'LLBEST!</li><li>SAQI</li><li>Bywan.</li></ul></div>
+</div></div>
+<div class="exp2">
+<div class="panel dark"><h2>Expertise</h2><ul><li>Brand Identity</li><li>Motion Graphics</li><li>Illustration</li><li>Visual Identity</li><li>Event Branding</li><li>Print Design</li><li>Social Media</li><li>Logo Design</li><li>Typography</li><li>Creative Direction</li><li>Book Cover</li></ul></div>
+<div class="panel edu"><h2>Education</h2><p><b>MA Darullughah Wadda'wah</b>2016 – 2019</p><p><b>UII Dalwa</b>Bachelor of Islamic Civilization History (SPI)<br>2019 – Present</p></div>
+</div>
+</section>
+
+<section id="brand">
+<div class="head"><div><span class="tag" style="color:var(--red)">Personal identity</span><h2>Brand System</h2></div>
+<a class="btn y" href="https://www.behance.net/gallery/170032623/Personal-Identity" target="_blank" rel="noopener">Full guideline ↗</a></div>
+<div class="sw">
+<div style="background:var(--red);color:#fff"><b>Red Alfa</b>#FF1107<br>R255 G17 B7</div>
+<div style="background:var(--yellow);color:var(--ink)"><b>Jonquil</b>#FFCC00<br>R255 G204 B0</div>
+<div style="background:var(--dark);color:#fff"><b>Dark Grey</b>#283539<br>R40 G53 B57</div>
+</div>
+<div class="type">
+<div style="background:var(--dark);color:#fff"><span class="aa" style="font-family:Quicksand;font-weight:300">Aa</span><span class="rk">Quicksand<br><small>Primary type</small></span></div>
+<div style="background:#fff"><span class="aa rk" style="font-weight:500">Aa</span><span class="rk" style="color:var(--red)">Rubik<br><small style="color:var(--dark)">Secondary type</small></span></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<span class="tag">Let's work together</span>
+<h2>Got a brand or event that needs a face?</h2>
+<p>Open for freelance and remote work — brand identity, motion graphics, event visuals and illustration.</p>
+<div class="row">
+<button class="btn w" onclick="copyEmail()">✉ hellobywan@gmail.com</button>
+<a class="btn o" href="Alwan_Faiq_CV_2026.pdf" download>⬇ Download CV</a>
+<a class="btn o" href="https://wa.me/6285820004370" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn o" href="https://www.behance.net/alwanfaiq" target="_blank" rel="noopener">Behance</a>
+<a class="btn o" href="https://www.instagram.com/alwan.faiq_" target="_blank" rel="noopener">Instagram</a>
+<a class="btn o" href="https://www.linkedin.com/in/alwanfaiq" target="_blank" rel="noopener">LinkedIn</a>
+</div></div>
+</section>
+</main>
+
+<footer><div class="wrap"><a href="#top" aria-label="Alwan Faiq"><svg viewBox="0 0 110.55559 21.130358" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img"><title>Alwan Faiq</title><g transform="translate(-8.4023174,-181.51918)"><path d="M 105.27651 188.99314 L 105.27651 189.30527 C 105.27651 189.82309 105.69668 190.24273 106.21443 190.24268 L 106.52656 190.24268 L 106.52656 189.93055 C 106.52656 189.41277 106.10691 188.99314 105.58915 188.99314 L 105.27651 188.99314 z M 105.27702 191.28448 L 105.27702 199.21887 C 105.27702 199.73661 105.69682 200.15629 106.21443 200.15629 L 106.52656 200.15629 L 106.52656 191.28448 L 105.27702 191.28448 z "/><path d="m 43.230293,188.99292 2.991233,11.16346 h 1.853781 c 0.442126,0 0.850654,-0.23584 1.071787,-0.61871 l 1.525441,-2.64237 1.525722,2.64237 c 0.220993,0.38287 0.62952,0.61871 1.071506,0.61871 H 55.1236 l 2.991416,-11.16346 h -1.853978 c -0.42132,0 -0.790204,0.28305 -0.899294,0.69011 l -1.898261,7.08454 -2.433592,-4.21505 c -0.158856,-0.27502 -0.555715,-0.27502 -0.714572,0 l -2.433591,4.21506 -1.898247,-7.08456 c -0.109091,-0.40705 -0.477932,-0.6901 -0.899337,-0.6901 z"/><path d="m 39.499591,185.25608 v 13.97557 c 0,0.51387 0.416569,0.93042 0.930433,0.93042 h 1.550675 v -14.90599 z"/><path d="m 32.651443,188.99289 c -2.935015,0 -5.340927,2.26535 -5.564732,5.14294 v 0.43882 c 0,3.08044 2.495378,5.57804 5.574952,5.58173 1.143595,-0.001 2.206456,-0.34808 3.09075,-0.94002 v 0.01 c 0,0.51379 0.416527,0.93029 0.930307,0.93029 h 1.550492 v -5.58176 -1.8606 -1.36193 -2.35925 h -3.721184 z m -0.0084,2.48073 v 0 0 h 0.0084 3.100661 v 3.10101 c 0,1.7093 -1.383187,3.09624 -3.092466,3.10092 l -0.0028,-0.008 -0.0042,0.008 h -0.0084 v 0 c -1.709279,-0.004 -3.092438,-1.39162 -3.092452,-3.10092 v 0 c 0,-1.70929 1.383159,-3.09623 3.092424,-3.10097 z"/><path d="m 98.44508,188.99292 c -2.935043,0 -5.3408,2.26535 -5.564745,5.14293 v 0.4388 c 0,3.08044 2.495447,5.57804 5.574867,5.58173 1.749388,-0.003 3.309828,-0.81104 4.331148,-2.07317 v 1.14294 c 0,0.51378 0.41654,0.93028 0.93036,0.93028 h 0.31027 v -5.58175 -1.8606 -3.72116 h -3.72131 z m 0.01406,1.24026 v 0 h 4.33283 v 1.11888 0 3.4963 c -0.14128,2.27007 -2.02717,4.06749 -4.33283,4.06749 -2.397744,0 -4.341412,-1.94371 -4.341412,-4.3414 0,-2.39769 1.943668,-4.34133 4.341412,-4.34133 z"/><path d="M 90.993142 188.99263 C 88.119957 188.99263 85.75411 191.16323 85.445677 193.95408 L 85.445677 193.95511 C 85.431617 194.01501 85.431434 194.07545 85.428624 194.13598 L 85.428624 194.57471 C 85.428624 194.65821 85.428797 194.74113 85.442576 194.82379 C 85.442576 194.85889 85.428624 194.89464 85.428624 194.93076 L 85.428624 200.15629 L 86.668858 200.15629 L 86.668858 196.43507 L 91.630829 196.43507 L 91.630829 195.19483 L 86.668858 195.19483 L 86.668858 194.31633 L 86.712266 193.95408 C 87.012406 191.85744 88.810762 190.24336 90.990041 190.23338 L 91.629795 190.23338 L 91.629795 188.99314 L 90.992625 188.99314 L 90.993142 188.99263 z "/><path d="m 82.911478,188.99292 v 3.72121 1.86062 5.58182 h -1.550323 c -0.513823,0 -0.930363,-0.41651 -0.930363,-0.9303 v -6.5079 0 -1.24462 h -3.100647 -0.01406 v 0 0 c -1.598683,0.004 -2.912128,1.21813 -3.075342,2.77375 v 0 9.3e-4 0.65179 4.31601 0.94015 h -2.480687 v -5.22554 c 0,-0.0361 0,-0.0718 0.01406,-0.10698 0,-0.0827 -0.01406,-0.16571 -0.01406,-0.24924 v -0.43882 c 0.223664,-2.8776 2.629562,-5.14299 5.564745,-5.14299 h 1.860445 z"/><path d="m 21.483278,181.51918 c -3.0947,1e-5 -5.603447,2.51372 -5.603447,5.61442 v 1.23353 h 3.73312 v -1.23353 c -1.4e-5,-1.03694 0.834304,-1.87754 1.869231,-1.87752 h 1.874966 c 2.059774,-3e-5 3.729563,-1.67314 3.729578,-3.7369 z m 5.280463,5.60284 a 0.3129019,0.3129019 0 0 0 -0.262885,0.14369 0.3129019,0.3129019 0 0 0 -0.0028,0.004 c -0.404408,0.63318 -0.998207,1.14381 -1.722732,1.44229 -0.449619,0.18469 -0.930883,0.27961 -1.416828,0.27935 l -0.0014,10e-4 h -1.271313 -2.476427 -3.733232 -0.54773 -1.313474 c -3.099705,3e-5 -5.6125846,2.51773 -5.6125846,5.62346 0.00984,3.09567 2.5229026,5.5971 5.6125846,5.58711 3.089738,0 5.594436,-2.50956 5.594436,-5.60529 v -1.24262 h -3.73267 v 1.24253 c 0,1.03192 -0.831267,1.86843 -1.861189,1.86839 -1.029894,-10e-6 -1.875684,-0.8365 -1.875698,-1.86839 1.4e-5,-1.03187 0.845804,-1.86762 1.875698,-1.86764 l 1.313599,-9.3e-4 h 0.551245 3.729591 1.873871 c 2.961669,-2.4e-4 5.40908,-2.30923 5.591989,-5.26646 a 0.3129019,0.3129019 0 0 0 6.05e-4,-0.007 0.3129019,0.3129019 0 0 0 1.26e-4,-0.001 0.3129019,0.3129019 0 0 0 7.31e-4,-0.019 0.3129019,0.3129019 0 0 0 -0.312974,-0.31286 z"/><path d="m 64.929664,188.99289 c -2.935043,0 -5.340941,2.26535 -5.564745,5.14294 v 0.43882 c 0,3.08044 2.495307,5.57804 5.575008,5.58173 1.143483,-0.001 2.206413,-0.34808 3.090666,-0.94002 v 0.01 c 0,0.51379 0.4164,0.93029 0.930362,0.93029 h 1.550324 v -5.58176 -1.8606 -1.36193 -2.35925 h -3.72117 z m -0.01406,2.48073 v 0 0 h 0.01406 3.100647 v 3.10101 c 0,1.7093 -1.383173,3.09624 -3.092493,3.10092 v -0.008 0.008 h -0.01406 v 0 c -1.709321,-0.004 -3.092494,-1.39162 -3.092494,-3.10092 v 0 c 0,-1.70929 1.383173,-3.09623 3.092494,-3.10097 z"/><path d="m 113.36687,188.99292 c -3.08518,0 -5.58653,2.49919 -5.59019,5.58347 0.0141,3.0827 2.506,5.57999 5.59019,5.57999 h 1.8634 2.47591 v 1.56144 c 0,0.51457 0.41724,0.93171 0.93191,0.93171 h 0.31982 v -6.21998 -1.86341 c 0,-0.10374 -0.004,-0.1781 -0.0141,-0.30895 -0.003,-0.17082 -0.0294,-0.37114 -0.0394,-0.42533 -0.34091,-2.59758 -2.46494,-4.63378 -5.1028,-4.83894 z m 1.5e-4,1.23374 c 2.30875,0 4.19717,1.79956 4.33916,4.07255 v 4.61488 c -0.0155,0 -3.32417,0.008 -4.33916,0.008 -2.40126,0 -4.34788,-1.94665 -4.34788,-4.34798 0,-2.40131 1.94662,-4.348 4.34788,-4.348 z"/></g></svg></a><span>© <span id="y"></span> Alwan Faiq. Studio: <a href="https://www.behance.net/bywan" target="_blank" rel="noopener" style="color:var(--red);font-weight:700">Bywan.</a></span></div></footer>
+<div id="toast">Email copied!</div>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+function copyEmail(){var e='hellobywan@gmail.com',t=document.getElementById('toast');
+(navigator.clipboard?navigator.clipboard.writeText(e):Promise.reject()).catch(function(){var a=document.createElement('textarea');a.value=e;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}).finally(function(){t.classList.add('on');setTimeout(function(){t.classList.remove('on')},2500)})}
+</script>
 </body>
 </html>
